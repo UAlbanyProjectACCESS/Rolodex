@@ -328,7 +328,10 @@ golem_add_external_resources <- function() {
           "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,"script","dataLayer","GTM-M39QN8M");</script>'),
 
-    includeCSS("www/framework7.bundle.min.css")
+    HTML('<link rel="stylesheet" type="text/css" href="https://ewokozwok.github.io/Rolodex/www/framework7.bundle.min.css">')
+
+
+    # includeCSS("www/framework7.bundle.min.css")
       # bundle_resources(
       #   path = app_sys('app/www'),
       #   app_title = 'Rolodex'
