@@ -1,0 +1,21 @@
+Package: Rolodex
+Title: Rolodex
+Version: 1.0.0.0000
+Authors@R: 
+    person("Evan", "Ozmat", , "eozmat@albany.edu", role = c("cre", "aut"))
+Description: Project ACCESS Resource Rolodex App.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    config (>= 0.3.1),
+    golem (>= 0.4.1),
+    htmltools,
+    pkgload,
+    shiny (>= 1.7.4.9002),
+    shinyMobile,
+    stats,
+    utils
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
