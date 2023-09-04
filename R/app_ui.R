@@ -39,9 +39,9 @@ app_ui <- function(request) {
                 intensity = 5,
                 hover = TRUE,
                 f7Card(title="What is Project ACCESS?",
-                  uiOutput("welcome"),
-                  hairlines = F, strong = T, inset =
-                    F, tablet = FALSE))),
+                       uiOutput("welcome"),
+                       hairlines = F, strong = T, inset =
+                         F, tablet = FALSE))),
 
             f7Block(
               f7Shadow(
@@ -51,7 +51,9 @@ app_ui <- function(request) {
                        uiOutput("installapp"),
                        footer=f7Button(inputId ="helppopup", label = "Quick Introduction", color= "darkorchid3", fill=T, shadow=T, rounded = T, size = "small"),
                        hairlines = F, strong = T, inset =
-                         F, tablet = FALSE)))
+                         F, tablet = FALSE))),
+
+            f7Align(div(f7Link("Report an bug or issue with the app", href="https://forms.gle/e74AyNsW7jvMqsSt6")), side=c("center"))
           ),
 
 
@@ -231,7 +233,7 @@ app_ui <- function(request) {
               hairlines = F, strong = T, inset =
                 F, tablet = FALSE)
 
-            ),
+          ),
 
 
 
@@ -259,10 +261,10 @@ app_ui <- function(request) {
               intensity = 5,
               hover = TRUE,
               f7Card(title = "Events Schedule",
-                uiOutput("events"),
+                     uiOutput("events"),
 
-                hairlines = F, strong = T, inset =
-                  F, tablet = FALSE))
+                     hairlines = F, strong = T, inset =
+                       F, tablet = FALSE))
           ),
 
           f7Tab(tabName="Insta",
@@ -271,9 +273,9 @@ app_ui <- function(request) {
                 f7Shadow(
                   intensity = 5,
                   hover = TRUE,
-                    f7Block(
-                      f7Align(h2("Stay up to date!"), side=c("center")),
-                      hairlines = F, strong = T, inset =
+                  f7Block(
+                    f7Align(h2("Stay up to date!"), side=c("center")),
+                    hairlines = F, strong = T, inset =
                       F, tablet = FALSE)),
                 f7Shadow(
                   intensity = 5,
@@ -332,10 +334,10 @@ golem_add_external_resources <- function() {
 
 
     # includeCSS("www/framework7.bundle.min.css")
-      # bundle_resources(
-      #   path = app_sys('app/www'),
-      #   app_title = 'Rolodex'
-      #   )
+    # bundle_resources(
+    #   path = app_sys('app/www'),
+    #   app_title = 'Rolodex'
+    #   )
 
     # favicon(),
 
