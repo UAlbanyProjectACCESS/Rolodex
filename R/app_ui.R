@@ -53,7 +53,7 @@ app_ui <- function(request) {
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE))),
 
-            f7Align(div(f7Link("Report an bug or issue with the app", href="https://forms.gle/e74AyNsW7jvMqsSt6")), side=c("center"))
+            f7Align(div(f7Link("Report a bug or issue with the app", href="https://forms.gle/e74AyNsW7jvMqsSt6")), side=c("center"))
           ),
 
 
