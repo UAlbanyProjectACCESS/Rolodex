@@ -86,6 +86,7 @@ app_ui <- function(request) {
                                                                                         "Sexual Health",
                                                                                         "Sexual Violence Related",
                                                                                         "Alcohol and Other Drug Concerns",
+                                                                                        "Problem Gambling",
                                                                                         "Academic Support",
                                                                                         "EOP Support",
                                                                                         "Food, Housing, & Financial",
@@ -97,6 +98,7 @@ app_ui <- function(request) {
                                  & input.PMHselector != 'MH Resources (Black Communities)'
                                  & input.PMHselector != 'MH Resources (Hispanic Communities)'
                                  & input.PMHselector != 'Academic Support'
+                                 & input.PMHselector != 'Problem Gambling'
                                  & input.PMHselector != 'Food, Housing, & Financial'
                                  & input.PMHselector != 'EOP Support'
                                  & input.PMHselector != 'Hotlines'" ,f7Toggle("OffCampus", "Show Off-Campus Resources", checked=F, color=NULL)),
@@ -156,6 +158,16 @@ app_ui <- function(request) {
                                            uiOutput("EQUINOXaccord"),
                                            uiOutput("AODCAREaccord"),
                                            uiOutput("OASASlocatoraccord"))),
+
+              conditionalPanel("input.PMHselector == 'Problem Gambling'",
+                               f7Accordion("Problem Gambling", multiCollapse = F,
+                                           uiOutput("GAMBNYSgambHLaccord"),
+                                           uiOutput("NYSGAMBescreeneraccord"),
+                                           uiOutput("NationalGambSupportaccordion"),
+                                           uiOutput("GamblersAnonymousaccordion"),
+                                           uiOutput("GamAnonaccordion"),
+                                           uiOutput("GambTxtLocatoraccordion"))),
+
               conditionalPanel("input.PMHselector == 'MH Resources (Black Communities)'",
                                f7Accordion("Mental Health Resources for Black Communities", multiCollapse = F,
                                            uiOutput("AAKOMAaccord"),
