@@ -1,8 +1,7 @@
 Package: Rolodex
 Title: Rolodex
-Version: 1.0.0.0000
-Authors@R: 
-    person("Evan", "Ozmat", , "eozmat@albany.edu", role = c("cre", "aut"))
+Version: 1.0.0.2000
+Authors@R: person('Evan', 'Ozmat', email = 'eozmat@albany.edu', role = c('cre', 'aut'))
 Description: Project ACCESS Resource Rolodex App.
 License: MIT + file LICENSE
 Depends: 
