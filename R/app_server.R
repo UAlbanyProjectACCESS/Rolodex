@@ -42,13 +42,13 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
-              br(),
-              br(),
-              br(),
-              br(),
-              br(),
-              br(),
-              f7BlockFooter(f7Align(h4("Swipe up to close this popup"), side=c("center"))))
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       f7BlockFooter(f7Align(h4("Swipe up to close this popup"), side=c("center"))))
     )
   })
   observe({
@@ -71,13 +71,13 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
-              br(),
-              br(),
-              br(),
-              br(),
-              br(),
-              br(),
-              f7BlockFooter(f7Align(h4("Swipe up to close this popup"), side=c("center"))))
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       br(),
+                       f7BlockFooter(f7Align(h4("Swipe up to close this popup"), side=c("center"))))
     )
   })
 
@@ -111,21 +111,21 @@ app_server <- function(input, output, session) {
 
                   f7AccordionItem(title = "Project Leaders", open=F,
                                   f7Block(f7Align(h2("M. Dolores Cimini, PhD"), side=c("center")),
-                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-04/EDU_CiminiMDolores_2021.JPG?h=fdd95cf8&itok=bGHgRgGr" width=60%></center>'),
-                                          h5("Dr. M. Dolores Cimini is a New York State licensed psychologist and Director of the Center for Behavioral Health Promotion and Applied Research and Senior Research Scientist in the Department of Educational and Counseling Psychology. She is the former Director of the nationally recognized Middle Earth Peer Assistance Program.
+                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-04/EDU_CiminiMDolores_2021.JPG?h=fdd95cf8&itok=bGHgRgGr" width=60%></center>'),
+                                  h5("Dr. M. Dolores Cimini is a New York State licensed psychologist and Director of the Center for Behavioral Health Promotion and Applied Research and Senior Research Scientist in the Department of Educational and Counseling Psychology. She is the former Director of the nationally recognized Middle Earth Peer Assistance Program.
                                 Dr. Cimini has led comprehensive efforts in research-to-practice translation at the University at Albany since 1990 with over $10 million in support from the National Institute on Alcohol Abuse and Alcoholism (NIAAA), National Institute on Drug Abuse (NIDA), Substance Abuse and Mental Health Services Administration (SAMHSA), U.S. Department of Education, U.S. Department of Justice’s Office on Violence Against Women, and New York State Office of Addiction Services and Supports."),
-                                          hr(),
-                                          f7Align(h2("Jessica L. Martin, PhD"), side=c("center")),
-                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-10/Martin.jpg?h=8c719d1f&itok=DZ_UoVte" width=60%></center>'),
-                                          h5("Jessica L. Martin is a licensed psychologist, a Research Fellow for the School of Education at the University at Albany, SUNY, and a Senior Research Associate for the Research Foundation for SUNY. She was a tenured faculty member in Counseling Psychology at the University at Albany for 11 years before transitioning to research roles and clinical work in private practice.
+                                  hr(),
+                                  f7Align(h2("Jessica L. Martin, PhD"), side=c("center")),
+                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-10/Martin.jpg?h=8c719d1f&itok=DZ_UoVte" width=60%></center>'),
+                                  h5("Jessica L. Martin is a licensed psychologist, a Research Fellow for the School of Education at the University at Albany, SUNY, and a Senior Research Associate for the Research Foundation for SUNY. She was a tenured faculty member in Counseling Psychology at the University at Albany for 11 years before transitioning to research roles and clinical work in private practice.
 
 Dr. Martin’s research expertise is in substance use and other health-risk behaviors among young adults and college students. Specifically, she investigates individual, psychosocial, cultural, and contextual risk and protective factors for substance use and co-occurring disorders and health-risk behaviors (e.g., disordered eating, risky sexual behavior) and health disparities as they relate to substance use."),
-                                          hr(),
+                                  hr(),
 
-                                          f7Align(h2("Laura L. Longo, PhD"), side=c("center")),
-                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2023-02/Laura%20Longo.png?h=c4434bf3&itok=ookWO5g4" width=60%></center>'),
-                                          h5("Laura M. Longo is a licensed psychologist, and a Senior Research Specialist for the Research Foundation for SUNY. Outside of the Center for Behavioral Health Promotion and Applied Research, Dr. Longo works in a private practice providing psychotherapy and evaluation services. Dr. Longo’s expertise is in the development, implementation, and evaluation of health communication campaigns, and prevention and early intervention services that address substance misuse and suicide prevention. Dr. Longo is passionate about understanding individual, sociocultural, and systemic factors that impact substance use, other areas of mental health, and recovery. Dr. Longo is a recovery ally and an avid social justice advocate."),
-                                          hr()
+                                  f7Align(h2("Laura L. Longo, PhD"), side=c("center")),
+                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2023-02/Laura%20Longo.png?h=c4434bf3&itok=ookWO5g4" width=60%></center>'),
+                                  h5("Laura M. Longo is a licensed psychologist, and a Senior Research Specialist for the Research Foundation for SUNY. Outside of the Center for Behavioral Health Promotion and Applied Research, Dr. Longo works in a private practice providing psychotherapy and evaluation services. Dr. Longo’s expertise is in the development, implementation, and evaluation of health communication campaigns, and prevention and early intervention services that address substance misuse and suicide prevention. Dr. Longo is passionate about understanding individual, sociocultural, and systemic factors that impact substance use, other areas of mental health, and recovery. Dr. Longo is a recovery ally and an avid social justice advocate."),
+                                  hr()
                                   )
                   ),
 
@@ -158,29 +158,29 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
   # Install App Instructions Card -------------------------------------------
   output$installapp <- renderUI({
-    tagList(
-      f7Accordion(id=NULL,
-                  f7AccordionItem(title = "iPhone", open=F, multiCollapse=F,
-                                  f7Block(br(),
-                                          h4("Step 1: Open the website in Safari"),
-                                          h4("Step 2: Tap the share button", f7Icon("square_arrow_up"), "at the bottom of the screen"),
-                                          h4("Step 3: Scroll down and click 'Add to Home Screen'"),
-                                          h4("Step 4: Find the ACCESS app on your homescreen and open up the app"),
-                                          f7Align(div(f7Link("Instructions with screenshots", href="https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html")),side=c("center")))),
+tagList(
+    f7Accordion(id=NULL,
+                f7AccordionItem(title = "iPhone", open=F, multiCollapse=F,
+                                f7Block(br(),
+                                        h4("Step 1: Open the website in Safari"),
+                                        h4("Step 2: Tap the share button", f7Icon("square_arrow_up"), "at the bottom of the screen"),
+                                        h4("Step 3: Scroll down and click 'Add to Home Screen'"),
+                                        h4("Step 4: Find the ACCESS app on your homescreen and open up the app"),
+                                        f7Align(div(f7Link("Instructions with screenshots", href="https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html")),side=c("center")))),
 
 
-                  f7AccordionItem(title = "Android", open=F, multiCollapse=F,
-                                  f7Block(br(),
-                                          h4("Step 1: Open the website in Chrome"),
-                                          h4("Step 2: Tap the menu in the upper right corner of the screen"),
-                                          h4("Step 3: Scroll down and click 'Add to Home Screen', change the name to 'ACCESS'"),
-                                          h4("Step 4: Find the ACCESS app on your homescreen and open up the app"),
-                                          f7Align(div(f7Link("Instructions with screenshots", href="https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html")),side=c("center"))
+                f7AccordionItem(title = "Android", open=F, multiCollapse=F,
+                                f7Block(br(),
+                                        h4("Step 1: Open the website in Chrome"),
+                                        h4("Step 2: Tap the menu in the upper right corner of the screen"),
+                                        h4("Step 3: Scroll down and click 'Add to Home Screen', change the name to 'ACCESS'"),
+                                        h4("Step 4: Find the ACCESS app on your homescreen and open up the app"),
+                                        f7Align(div(f7Link("Instructions with screenshots", href="https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html")),side=c("center"))
 
-                                  )))
+                                        )))
 
-    )
-  })
+)
+})
 
 
   # Navigator & STI Appointment Page ----------------------------------------------
@@ -242,7 +242,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
 
 
-        )
+          )
       )
     })
     output$events<- renderUI({
@@ -321,12 +321,12 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         }
         tagList(
           f7AccordionItem(multiCollapse = F,f7Block(br(),
-                                                    textOutput("SHSinfo2"),
-                                                    uiOutput("SHSinfo3"),
-                                                    uiOutput("SHSinfo4"),
-                                                    textOutput("SHSinfo5"),
-                                                    textOutput("SHSinfo9"),
-                                                    hr()
+                                  textOutput("SHSinfo2"),
+                                  uiOutput("SHSinfo3"),
+                                  uiOutput("SHSinfo4"),
+                                  textOutput("SHSinfo5"),
+                                  textOutput("SHSinfo9"),
+                                  hr()
 
           ),
 
@@ -449,11 +449,11 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         }
         tagList(
           f7AccordionItem(multiCollapse = F,f7Block(br(),
-                                                    textOutput("SCSinfo2"),
-                                                    uiOutput("SCSinfo3"),
-                                                    uiOutput("SCSinfo4"),
-                                                    textOutput("SCSinfo5"),
-                                                    textOutput("SCSinfo9"), hr()
+                                  textOutput("SCSinfo2"),
+                                  uiOutput("SCSinfo3"),
+                                  uiOutput("SCSinfo4"),
+                                  textOutput("SCSinfo5"),
+                                  textOutput("SCSinfo9"), hr()
 
           ),
 
@@ -3951,10 +3951,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
   })
 
-  #
-  #   ##################################
-  #   ### Problem Gambling Resources ###
-  #   ##################################
+#
+#   ##################################
+#   ### Problem Gambling Resources ###
+#   ##################################
 
 
   observeEvent(input$PMHselector,{
@@ -3962,561 +3962,547 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
     GAMBdata<-data[data$Type == 'GAMB',]
 
 
-    # GAMB NYS Gamblers Hotline Accordian -----------------------------------------------------------
+      # GAMB NYS Gamblers Hotline Accordian -----------------------------------------------------------
 
 
-    output$GAMBNYSgambHLaccord<-renderUI({
+      output$GAMBNYSgambHLaccord<-renderUI({
 
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
 
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("GAMBNYSgambHLinfo2"),
-                                  uiOutput("GAMBNYSgambHLinfo3"),
-                                  uiOutput("GAMBNYSgambHLinfo4"),
-                                  textOutput("GAMBNYSgambHLinfo5"),
-                                  textOutput("GAMBNYSgambHLinfo9"), hr()
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("GAMBNYSgambHLinfo2"),
+                                    uiOutput("GAMBNYSgambHLinfo3"),
+                                    uiOutput("GAMBNYSgambHLinfo4"),
+                                    textOutput("GAMBNYSgambHLinfo5"),
+                                    textOutput("GAMBNYSgambHLinfo9"), hr()
 
-          ),
+            ),
 
-          title = "New York State Gambler's Hotline", open=F))
-
-
-      }
+            title = "New York State Gambler's Hotline", open=F))
 
 
+        }
+
+
+
+
+
+      })
+
+
+      # GAMB NYS Gamblers Hotline Info ----------------------------------------------------------------
+
+
+
+      output$GAMBNYSgambHLinfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+      output$GAMBNYSgambHLinfo3<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",3])
+          text<-na.omit(text)
+          f7Link("Call now", href=text)
+        }
+
+
+      })
+
+      output$GAMBNYSgambHLinfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+
+      output$GAMBNYSgambHLinfo5<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",5])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+      output$GAMBNYSgambHLinfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+      # GAMB NYS Gambling E-Screener Accordian -----------------------------------------------------------
+
+
+      output$NYSGAMBescreeneraccord<-renderUI({
+
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
+
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("NYSGAMBescreenerinfo2"),
+                                    uiOutput("NYSGAMBescreenerinfo4"),
+                                    textOutput("NYSGAMBescreenerinfo5"),
+                                    textOutput("NYSGAMBescreenerinfo9"), hr()
+
+            ),
+
+            title = "NYS Gambling E-Screener (Free)", open=F))
+
+
+        }
+
+
+
+
+
+      })
+
+
+      # GAMB NYS Gambling E-Screener Info ----------------------------------------------------------------
+
+
+
+      output$NYSGAMBescreenerinfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+
+      output$NYSGAMBescreenerinfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+
+      output$NYSGAMBescreenerinfo5<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",5])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+      output$NYSGAMBescreenerinfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+
+
+      # GAMB National Gambler Support Line Accordian -----------------------------------------------------------
+
+
+      output$NationalGambSupportaccordion<-renderUI({
+
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
+
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("NATLGAMBsupportinfo2"),
+                                    uiOutput("NATLGAMBsupportinfo3"),
+                                    uiOutput("NATLGAMBsupportinfo4"),
+                                    textOutput("NATLGAMBsupportinfo5"),
+                                    textOutput("NATLGAMBsupportinfo9"), hr()
+
+            ),
+
+            title = "National Gambler Support Line", open=F))
+
+
+        }
+
+      })
+
+
+      # GAMB National Gambler Support Line Info ----------------------------------------------------------------
+
+
+
+      output$NATLGAMBsupportinfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+      output$NATLGAMBsupportinfo3<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",3])
+          text<-na.omit(text)
+          f7Link("Call now", href=text)
+        }
+
+
+      })
+
+      output$NATLGAMBsupportinfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+
+      output$NATLGAMBsupportinfo5<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",5])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+      output$NATLGAMBsupportinfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+
+      # GAMB Gamblers Anonymous Accordian -----------------------------------------------------------
+
+
+      output$GamblersAnonymousaccordion<-renderUI({
+
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
+
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("GamblersAnonymousinfo2"),
+                                    uiOutput("GamblersAnonymousinfo4"),
+                                    textOutput("GamblersAnonymousinfo9"), hr()
+
+            ),
+
+            title = "Gamblers Anonymous", open=F))
+
+
+        }
+
+      })
+
+
+      # GAMB Gamblers Anonymous Info ----------------------------------------------------------------
+
+
+
+      output$GamblersAnonymousinfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+
+      output$GamblersAnonymousinfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+
+      output$GamblersAnonymousinfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+      # GAMB Gam-Anon Accordian -----------------------------------------------------------
+
+
+      output$GamAnonaccordion<-renderUI({
+
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
+
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("GamAnoninfo2"),
+                                    uiOutput("GamAnoninfo4"),
+                                    textOutput("GamAnoninfo9"), hr()
+
+            ),
+
+            title = "Gam-Anon (For Friends & Family)", open=F))
+
+
+        }
+
+      })
+
+
+      # GAMB Gam-Anon Info ----------------------------------------------------------------
+
+
+
+      output$GamAnoninfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+
+      output$GamAnoninfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+
+      output$GamAnoninfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+
+
+
+
+      # GAMB OASAS Gambling Treatment Locator Accordian -----------------------------------------------------------
+
+
+      output$GambTxtLocatoraccordion<-renderUI({
+
+        if(input$PMHselector == "Problem Gambling"){
+          GAMBdata1<-GAMBdata
+
+          tagList(
+            f7AccordionItem(f7Block(br(),
+                                    textOutput("GambTxtLocinfo2"),
+                                    uiOutput("GambTxtLocinfo4"),
+                                    textOutput("GambTxtLocinfo5"),
+                                    textOutput("GambTxtLocinfo9"), hr()
+
+            ),
+
+            title = "Problem Gambling Treatment Locator", open=F))
+
+
+        }
+
+      })
+
+
+      # GAMB OASAS Gambling Treatment Locator Info ----------------------------------------------------------------
+
+
+
+      output$GambTxtLocinfo2<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",2])
+          text<-na.omit(text)
+          text
+        }
+
+
+      })
+
+
+      output$GambTxtLocinfo4<- renderUI({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",4])
+          text<-na.omit(text)
+          f7Link(text, href=text)
+        }
+
+
+      })
+
+      output$GambTxtLocinfo5<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",5])
+          text<-na.omit(text)
+          text
+        }
+
+      })
+
+      output$GambTxtLocinfo9<- renderText({
+        if(input$PMHselector == "Problem Gambling"){
+
+          GAMBdata1<-GAMBdata
+
+
+          text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",9])
+          text<-na.omit(text)
+          text
+        }
+
+      })
 
 
 
     })
-
-
-    # GAMB NYS Gamblers Hotline Info ----------------------------------------------------------------
-
-
-
-    output$GAMBNYSgambHLinfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-    output$GAMBNYSgambHLinfo3<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",3])
-        text<-na.omit(text)
-        f7Link("Call now", href=text)
-      }
-
-
-    })
-
-    output$GAMBNYSgambHLinfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-
-    output$GAMBNYSgambHLinfo5<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",5])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-    output$GAMBNYSgambHLinfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="New York State Gambler's Hotline",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-    # GAMB NYS Gambling E-Screener Accordian -----------------------------------------------------------
-
-
-    output$NYSGAMBescreeneraccord<-renderUI({
-
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
-
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("NYSGAMBescreenerinfo2"),
-                                  uiOutput("NYSGAMBescreenerinfo3"),
-                                  uiOutput("NYSGAMBescreenerinfo4"),
-                                  textOutput("NYSGAMBescreenerinfo5"),
-                                  textOutput("NYSGAMBescreenerinfo9"), hr()
-
-          ),
-
-          title = "NYS Gambling E-Screener (Free)", open=F))
-
-
-      }
-
-
-
-
-
-    })
-
-
-    # GAMB NYS Gambling E-Screener Info ----------------------------------------------------------------
-
-
-
-    output$NYSGAMBescreenerinfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-    output$NYSGAMBescreenerinfo3<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",3])
-        text<-na.omit(text)
-        f7Link("Call now", href=text)
-      }
-
-
-    })
-
-    output$NYSGAMBescreenerinfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-
-    output$NYSGAMBescreenerinfo5<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",5])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-    output$NYSGAMBescreenerinfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="NYS Gambling E-Screener",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-
-
-    # GAMB National Gambler Support Line Accordian -----------------------------------------------------------
-
-
-    output$NationalGambSupportaccordion<-renderUI({
-
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
-
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("NATLGAMBsupportinfo2"),
-                                  uiOutput("NATLGAMBsupportinfo3"),
-                                  uiOutput("NATLGAMBsupportinfo4"),
-                                  textOutput("NATLGAMBsupportinfo5"),
-                                  textOutput("NATLGAMBsupportinfo9"), hr()
-
-          ),
-
-          title = "National Gambler Support Line", open=F))
-
-
-      }
-
-    })
-
-
-    # GAMB National Gambler Support Line Info ----------------------------------------------------------------
-
-
-
-    output$NATLGAMBsupportinfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-    output$NATLGAMBsupportinfo3<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",3])
-        text<-na.omit(text)
-        f7Link("Call now", href=text)
-      }
-
-
-    })
-
-    output$NATLGAMBsupportinfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-
-    output$NATLGAMBsupportinfo5<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",5])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-    output$NATLGAMBsupportinfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="National Gambler Support Line",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-
-    # GAMB Gamblers Anonymous Accordian -----------------------------------------------------------
-
-
-    output$GamblersAnonymousaccordion<-renderUI({
-
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
-
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("GamblersAnonymousinfo2"),
-                                  uiOutput("GamblersAnonymousinfo4"),
-                                  textOutput("GamblersAnonymousinfo9"), hr()
-
-          ),
-
-          title = "Gamblers Anonymous", open=F))
-
-
-      }
-
-    })
-
-
-    # GAMB Gamblers Anonymous Info ----------------------------------------------------------------
-
-
-
-    output$GamblersAnonymousinfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-
-    output$GamblersAnonymousinfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-
-    output$GamblersAnonymousinfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gamblers Anonymous",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-    # GAMB Gam-Anon Accordian -----------------------------------------------------------
-
-
-    output$GamAnonaccordion<-renderUI({
-
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
-
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("GamAnoninfo2"),
-                                  uiOutput("GamAnoninfo4"),
-                                  textOutput("GamAnoninfo9"), hr()
-
-          ),
-
-          title = "Gam-Anon (For Friends & Family)", open=F))
-
-
-      }
-
-    })
-
-
-    # GAMB Gam-Anon Info ----------------------------------------------------------------
-
-
-
-    output$GamAnoninfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-
-    output$GamAnoninfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-
-    output$GamAnoninfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="Gam-Anon",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-
-
-    # GAMB OASAS Gambling Treatment Locator Accordian -----------------------------------------------------------
-
-
-    output$GambTxtLocatoraccordion<-renderUI({
-
-      if(input$PMHselector == "Problem Gambling"){
-        GAMBdata1<-GAMBdata
-
-        tagList(
-          f7AccordionItem(f7Block(br(),
-                                  textOutput("GambTxtLocinfo2"),
-                                  uiOutput("GambTxtLocinfo4"),
-                                  textOutput("GambTxtLocinfo5"),
-                                  textOutput("GambTxtLocinfo9"), hr()
-
-          ),
-
-          title = "Problem Gambling Treatment Locator", open=F))
-
-
-      }
-
-    })
-
-
-    # GAMB OASAS Gambling Treatment Locator Info ----------------------------------------------------------------
-
-
-
-    output$GambTxtLocinfo2<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",2])
-        text<-na.omit(text)
-        text
-      }
-
-
-    })
-
-
-    output$GambTxtLocinfo4<- renderUI({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",4])
-        text<-na.omit(text)
-        f7Link(text, href=text)
-      }
-
-
-    })
-
-    output$GambTxtLocinfo5<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",5])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-    output$GambTxtLocinfo9<- renderText({
-      if(input$PMHselector == "Problem Gambling"){
-
-        GAMBdata1<-GAMBdata
-
-
-        text<-c(GAMBdata1[GAMBdata1=="OASAS Problem Gambling Treatment Locator",9])
-        text<-na.omit(text)
-        text
-      }
-
-    })
-
-
-
-  })
 
 
 
