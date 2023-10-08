@@ -1,6 +1,6 @@
 {
   "name": "Project ACCESS Resource Rolodex",
-  "short_name": "ACCESS",
+  "short_name": "Rolodex",
   "description": "This is the Project ACCESS Resource Rolodex!",
   "lang": "en-US",
   "start_url": "https://ualbanyprojectaccess.shinyapps.io/Rolodex/",
@@ -9,8 +9,8 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icons/icon-144.png",
-      "sizes": "144x144"
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "512x512"
     }
   ],
   "shortcuts": [
