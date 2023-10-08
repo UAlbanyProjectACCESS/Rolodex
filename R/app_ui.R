@@ -66,18 +66,16 @@ app_ui <- function(request) {
             f7Shadow(
               intensity = 5,
               hover = TRUE,
-              f7Block(
+              f7Card(
+                f7Block(
                 f7Align(h2("Search for on- and off-campus resources and services"), side=("center")),
-                hairlines = F, strong = T, inset =
-                  F, tablet = FALSE)),
+                strong = T, inset = T, tablet = FALSE))),
 
 
             f7Shadow(
               intensity = 5,
               hover = TRUE,
-              f7Card(
-                title = NULL,
-                f7Align(h3("Select a resource category below"), side=c("left")),
+              f7Card(title = "Select a resource category below",
                 f7Block(f7SmartSelect("PMHselector", NULL, type = c("popup"), choices=c("Physical Health",
                                                                                         "Mental Health (MH)",
                                                                                         "MH Resources (Black Communities)",
@@ -112,11 +110,13 @@ app_ui <- function(request) {
             ),
 
 
-
-
+            f7Shadow(
+              intensity = 5,
+              hover = TRUE,
+            f7Card(
             f7Block(
               conditionalPanel("input.PMHselector == 'Physical Health'",
-                               f7Accordion("Physical Health Resources", multiCollapse = F,
+                               f7Accordion(h4("Physical Health Resources"), multiCollapse = F,
                                            uiOutput("SHSaccord"),
                                            uiOutput("SCSaccord"),
                                            uiOutput("SHAPEaccord"),
@@ -128,7 +128,7 @@ app_ui <- function(request) {
                                            uiOutput("STPETEaccord"),
                                            uiOutput("SAMARITANaccord"))),
               conditionalPanel("input.PMHselector == 'Mental Health (MH)'",
-                               f7Accordion("Mental Health Resources", multiCollapse = F,
+                               f7Accordion(h4("Mental Health Resources"), multiCollapse = F,
                                            uiOutput("CAPSaccord"),
                                            uiOutput("MEaccord"),
                                            uiOutput("PsychTodayaccord"),
@@ -136,14 +136,14 @@ app_ui <- function(request) {
                                            uiOutput("PRIDE1accord"),
                                            uiOutput("SUICIDEPREVaccord"))),
               conditionalPanel("input.PMHselector == 'Sexual Violence Related'",
-                               f7Accordion("Sexual Violence Related", multiCollapse = F,
+                               f7Accordion(h4("Sexual Violence Related"), multiCollapse = F,
                                            uiOutput("LegalSV"),
                                            uiOutput("SVSA"),
                                            uiOutput("SAH1"),
                                            uiOutput("RAINN"),
                                            uiOutput("CVSVC"))),
               conditionalPanel("input.PMHselector == 'Sexual Health'",
-                               f7Accordion("Sexual Health", multiCollapse = F,
+                               f7Accordion(h4("Sexual Health"), multiCollapse = F,
                                            uiOutput("SHS_sexaccord"),
                                            uiOutput("AMCYAPaccord"),
                                            uiOutput("APHaccord"),
@@ -152,7 +152,7 @@ app_ui <- function(request) {
                                            uiOutput("WYHaccord"),
                                            uiOutput("PRIDE2"))),
               conditionalPanel("input.PMHselector == 'Alcohol and Other Drug Concerns'",
-                               f7Accordion("Alcohol and Other Drug Concerns", multiCollapse = F,
+                               f7Accordion(h4("Alcohol and Other Drug Concerns"), multiCollapse = F,
                                            uiOutput("CRPaccord"),
                                            uiOutput("NUAaccord"),
                                            uiOutput("EQUINOXaccord"),
@@ -160,7 +160,7 @@ app_ui <- function(request) {
                                            uiOutput("OASASlocatoraccord"))),
 
               conditionalPanel("input.PMHselector == 'Problem Gambling'",
-                               f7Accordion("Problem Gambling", multiCollapse = F,
+                               f7Accordion(h4("Problem Gambling"), multiCollapse = F,
                                            uiOutput("GAMBNYSgambHLaccord"),
                                            uiOutput("NYSGAMBescreeneraccord"),
                                            uiOutput("NationalGambSupportaccordion"),
@@ -169,7 +169,7 @@ app_ui <- function(request) {
                                            uiOutput("GambTxtLocatoraccordion"))),
 
               conditionalPanel("input.PMHselector == 'MH Resources (Black Communities)'",
-                               f7Accordion("Mental Health Resources for Black Communities", multiCollapse = F,
+                               f7Accordion(h4("Mental Health Resources for Black Communities"), multiCollapse = F,
                                            uiOutput("AAKOMAaccord"),
                                            uiOutput("BEAMaccord"),
                                            uiOutput("BLHFaccord"),
@@ -182,7 +182,7 @@ app_ui <- function(request) {
                                            uiOutput("TBGaccord"),
                                            uiOutput("TBMaccord"))),
               conditionalPanel("input.PMHselector == 'MH Resources (Hispanic Communities)'",
-                               f7Accordion("Mental Health Resources for Hispanic Communities", multiCollapse = F,
+                               f7Accordion(h4("Mental Health Resources for Hispanic Communities"), multiCollapse = F,
                                            uiOutput("CDLaccord"),
                                            uiOutput("ITHISPANICaccord"),
                                            uiOutput("LIPaccord"),
@@ -193,7 +193,7 @@ app_ui <- function(request) {
                                            uiOutput("POCASHISPANICaccord"),
                                            uiOutput("QTPOCHISPANICaccord"))),
               conditionalPanel("input.PMHselector == 'Academic Support'",
-                               f7Accordion("Academic Support", multiCollapse = F,
+                               f7Accordion(h4("Academic Support"), multiCollapse = F,
                                            uiOutput("UALIBaccord"),
                                            uiOutput("DAISSaccord"),
                                            uiOutput("WCaccord"),
@@ -204,25 +204,25 @@ app_ui <- function(request) {
                                            uiOutput("FFThoughtaccord"),
                                            uiOutput("DOSaccord"))),
               conditionalPanel("input.PMHselector == 'EOP Support'",
-                               f7Accordion("EOP Support", multiCollapse = F,
+                               f7Accordion(h4("EOP Support"), multiCollapse = F,
                                            uiOutput("EOPCounselingaccord"),
                                            uiOutput("EOPpeerTutoraccord"),
                                            uiOutput("EOPcomp"),
                                            uiOutput("EOPworkshops"),
                                            uiOutput("EOPWC"))),
               conditionalPanel("input.PMHselector == 'Food, Housing, & Financial'",
-                               f7Accordion("Food, Housing, & Financial", multiCollapse = F,
+                               f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = F,
                                            uiOutput("FAOaccord"),
                                            uiOutput("PURPLEPANTRYaccord"),
                                            uiOutput("PURPLETHREADSaccord"),
                                            uiOutput("UAEmergFUNDaccord"),
                                            uiOutput("UADIETaccord"))),
               conditionalPanel("input.PMHselector == 'Legal Resources'",
-                               f7Accordion("Legal Resources", multiCollapse = F,
+                               f7Accordion(h4("Legal Resources"), multiCollapse = F,
                                            uiOutput("Legal2"),
                                            uiOutput("LASLEGALaccord"))),
               conditionalPanel("input.PMHselector == 'LGBTQ+ Resources'",
-                               f7Accordion("LGBTQ+ Resources", multiCollapse = F,
+                               f7Accordion(h4("LGBTQ+ Resources"), multiCollapse = F,
                                            uiOutput("SHAPE2accord"),
                                            uiOutput("Legal1"),
                                            uiOutput("PRIDE3accord"),
@@ -234,16 +234,14 @@ app_ui <- function(request) {
                                            uiOutput("QTPOClgbtqaccord"),
                                            uiOutput("LASaccord"))),
               conditionalPanel("input.PMHselector == 'Hotlines'",
-                               f7Accordion("Hotlines", multiCollapse = F,
+                               f7Accordion(h4("Hotlines"), multiCollapse = F,
                                            uiOutput("RAINNHOTLINE"),
                                            uiOutput("NYSsmokersHLaccord"),
                                            uiOutput("SexAssaultHLaccord"),
                                            uiOutput("NYSgambHLaccord"),
                                            uiOutput("NYSsupportHLaccord"))),
 
-              br(),
-              hairlines = F, strong = T, inset =
-                F, tablet = FALSE)
+              br())))
 
           ),
 
@@ -254,13 +252,15 @@ app_ui <- function(request) {
             tabName = "ApptTab",
             icon = f7Icon("calendar_badge_plus"),
             active = FALSE,
+
             f7Shadow(
               intensity = 5,
               hover = TRUE,
-              f7Block(
-                f7Align(h3("Project ACCESS offers three types of appointments and a variety of Events!"), side=("center")),
-                hairlines = F, strong = T, inset =
-                  F, tablet = FALSE)),
+              f7Card(
+                f7Block(
+                  f7Align(h2("Project ACCESS offers three types of appointments and a variety of Events!"), side=("center")),
+                  strong = T, inset = T, tablet = FALSE))),
+
             f7Shadow(
               intensity = 5,
               hover = TRUE,
@@ -282,13 +282,16 @@ app_ui <- function(request) {
           f7Tab(tabName="Insta",
                 active = FALSE,
                 icon = f7Icon("logo_instagram"),
+
+
                 f7Shadow(
                   intensity = 5,
                   hover = TRUE,
-                  f7Block(
-                    f7Align(h2("Stay up to date!"), side=c("center")),
-                    hairlines = F, strong = T, inset =
-                      F, tablet = FALSE)),
+                  f7Card(
+                    f7Block(
+                      f7Align(h2("Stay up to date!"), side=c("center")),
+                      strong = T, inset = T, tablet = FALSE))),
+
                 f7Shadow(
                   intensity = 5,
                   hover = TRUE,
