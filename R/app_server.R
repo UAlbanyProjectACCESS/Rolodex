@@ -87,7 +87,7 @@ app_server <- function(input, output, session) {
     tagList(
       f7Accordion(id=NULL, multiCollapse = F,
                   f7AccordionItem(title = "About Us", open=F,
-                                  f7Block(h3("Project ACCESS is a translational research initiative at UAlbany funded by a grant from the federal government and our mission is to help you find and decide on what kind of resources and services might help you."),
+                                  f7Block(h3("Project ACCESS is innovative translational research initiative at UAlbany funded by a grant from the federal government and our mission is to help you find and decide on what kind of resources and services might help you."),
                                           hr(),
                                           h4("We offer appointments with peer-navigators to explore free on- and off-campus resources,
                                             education events that help you thrive as a student and in life, and connections to confidential and anonymous on-campus STI testing provided by our community partners"),
