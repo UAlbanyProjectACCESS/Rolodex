@@ -290,7 +290,7 @@ tagList(
 
           )
       )
-    }) %>% bindCache(output$appts)
+    })
     output$events<- renderUI({
       tagList(
         f7Accordion(id=NULL,
@@ -301,7 +301,7 @@ tagList(
 
                                     ))))
 
-    }) %>% bindCache(output$events)
+    })
 
 
   })
@@ -324,7 +324,7 @@ tagList(
         f7Align(div(f7Link("Follow us on Instagram", href="https://www.instagram.com/ualbanyprojectaccess")),side=c("center"))
       )
 
-    }) %>% bindCache(output$instalink)
+    })
   })
 
 
