@@ -252,6 +252,7 @@ app_ui <- function(request) {
 
                     conditionalPanel("input.PMHselector == 'Hotlines'",
                                      f7Accordion(h4("Hotlines"), multiCollapse = F,
+                                                 mod_Accordion_ui('HL_FindAHelpline'),
                                                  mod_Accordion_ui('HL_NYSsupport'),
                                                  mod_Accordion_ui('HL_NYSsexassaultHL'),
                                                  mod_Accordion_ui('HL_RAINN'),

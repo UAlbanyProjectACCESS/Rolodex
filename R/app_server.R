@@ -811,6 +811,8 @@ tagList(
     req(input$PMHselector == "Hotlines")
     selection<-input$PMHselector
     HLdata<-data[data$Type == 'Hotline',]
+    mod_Accordion_server('HL_FindAHelpline', selector=selection, data=HLdata, title = c('Find a Helpline'), Visible = T)
+    mod_info_server('HL_FindAHelpline', selector = selection, data = HLdata, rownametitle = c('Find a Helpline'), phone = F, website = T)
     mod_Accordion_server('HL_NYSsupport', selector=selection, data=HLdata, title = c('New York State Support Line'), Visible = T)
     mod_info_server('HL_NYSsupport', selector = selection, data = HLdata, rownametitle = c('New York State Support Line'), phone = T, website = T)
     mod_Accordion_server('HL_NYSsexassaultHL', selector=selection, data=HLdata, title = c('24-Hour Sexual Assault Hotline'), Visible = T)
