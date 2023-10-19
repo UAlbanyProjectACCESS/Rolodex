@@ -11,6 +11,7 @@ Imports:
     config (>= 0.3.1),
     golem (>= 0.4.1),
     htmltools,
+    magrittr,
     shiny (>= 1.7.4.9002),
     shinyMobile,
     stats,
