@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:5641efc8474367077b878e814f4a2391f11752b4a5bac6d8254b801da769edaf",
+      "id": "sha256:86d5c0e4775e157204bd5fff60f8d4ee8805eb06501d833210fc27db348321d7",
       "tags": [
         "latest"
       ],
@@ -29,9 +29,9 @@
         "rolodex:latest"
       ]
     },
-    "size": 3943036051,
+    "size": 3941576299,
     "size_human": "3.9 GB",
-    "create_time": "2023-10-08T12:57:56Z",
+    "create_time": "2023-10-19T21:47:28Z",
     "docker_version": "",
     "architecture": "amd64",
     "exposed_ports": [
@@ -69,27 +69,27 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 486530003,
+  "minified_image_size": 486111121,
   "minified_image_size_human": "486 MB",
   "minified_image": "rolodex.slim",
   "minified_image_has_data": true,
-  "minified_by": 8.104404716434312,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/5641efc8474367077b878e814f4a2391f11752b4a5bac6d8254b801da769edaf/artifacts",
+  "minified_by": 8.108385364423704,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/86d5c0e4775e157204bd5fff60f8d4ee8805eb06501d833210fc27db348321d7/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "rolodex-seccomp.json",
   "apparmor_profile_name": "rolodex-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:5641efc8474367077b878e814f4a2391f11752b4a5bac6d8254b801da769edaf",
+      "id": "sha256:86d5c0e4775e157204bd5fff60f8d4ee8805eb06501d833210fc27db348321d7",
       "full_name": "rolodex:latest",
       "repo_name": "rolodex",
       "version_tag": "latest",
       "raw_tags": [
         "rolodex:latest"
       ],
-      "create_time": "2023-10-08T12:57:56Z",
-      "new_size": 3943036051,
+      "create_time": "2023-10-19T21:47:28Z",
+      "new_size": 3941576299,
       "new_size_human": "3.9 GB",
       "instructions": [
         {
@@ -732,29 +732,29 @@
         },
         {
           "type": "COPY",
-          "time": "2023-10-08T12:55:39Z",
+          "time": "2023-10-19T21:45:13Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 13822,
+          "size": 13824,
           "size_human": "14 kB",
           "params": "renv.lock.prod renv.lock",
           "command_snippet": "COPY renv.lock.prod renv.lock",
           "command_all": "COPY renv.lock.prod renv.lock",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-10-08T12:56:04Z",
+          "time": "2023-10-19T21:45:37Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 345480567,
-          "size_human": "346 MB",
+          "size": 345401473,
+          "size_human": "345 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
           "system_commands": [
@@ -762,35 +762,35 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "COPY",
-          "time": "2023-10-08T12:56:15Z",
+          "time": "2023-10-19T21:45:47Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 13822,
+          "size": 13824,
           "size_human": "14 kB",
           "params": "renv.lock.prod renv.lock",
           "command_snippet": "COPY renv.lock.prod renv.lock",
           "command_all": "COPY renv.lock.prod renv.lock",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-10-08T12:56:20Z",
+          "time": "2023-10-19T21:45:53Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 170587746,
-          "size_human": "171 MB",
+          "size": 170544142,
+          "size_human": "170 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
           "system_commands": [
@@ -798,35 +798,35 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "COPY",
-          "time": "2023-10-08T12:56:20Z",
+          "time": "2023-10-19T21:45:53Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 491162,
-          "size_human": "491 kB",
+          "size": 495533,
+          "size_human": "496 kB",
           "params": "Rolodex_*.tar.gz /app.tar.gz",
           "command_snippet": "COPY Rolodex_*.tar.gz /app.tar.gz",
           "command_all": "COPY Rolodex_*.tar.gz /app.tar.gz",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-10-08T12:57:56Z",
+          "time": "2023-10-19T21:47:27Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 59410971,
-          "size_human": "59 MB",
+          "size": 58069542,
+          "size_human": "58 MB",
           "command_snippet": "RUN R -e 'remotes::install_github(\"EwokOzwok...",
           "command_all": "RUN R -e 'remotes::install_github(\"EwokOzwok/Rolodex\")'",
           "system_commands": [
@@ -834,13 +834,13 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-10-08T12:57:56Z",
+          "time": "2023-10-19T21:47:28Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -852,13 +852,13 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "EXPOSE",
-          "time": "2023-10-08T12:57:56Z",
+          "time": "2023-10-19T21:47:28Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -868,13 +868,13 @@
           "command_all": "EXPOSE 3838/tcp",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "CMD",
-          "time": "2023-10-08T12:57:56Z",
+          "time": "2023-10-19T21:47:28Z",
           "is_last_instruction": true,
           "is_nop": false,
           "local_image_exists": true,
@@ -888,7 +888,7 @@
             "rolodex:latest"
           ],
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-10-08T08:45:00-04:00",
+          "inst_set_time_bucket": "2023-10-19T17:45:00-04:00",
           "inst_set_time_index": 8,
           "inst_set_time_reverse_index": 0
         }

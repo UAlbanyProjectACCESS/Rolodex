@@ -36,7 +36,7 @@ golem::add_shinyserver_file()
 golem::add_dockerfile_with_renv(output_dir = "deploy")
 
 ## If you want to deploy to ShinyProxy
-golem::add_dockerfile_with_renv_shinyproxy(output_dir = "deploy", document = F, port=3838)
+golem::add_dockerfile_with_renv_shinyproxy(output_dir = "deploy")
 golem::add_dockerfile(output = "Dockerfile", port=3838)
 # Deploy to Posit Connect or ShinyApps.io
 # In command line.
