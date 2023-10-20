@@ -258,9 +258,6 @@ tagList(
 
 
 
-
-
-
   # Instagram Link ----------------------------------------------------------
   observeEvent(input$tab,{
     req(input$tab=="Insta")
@@ -307,10 +304,10 @@ tagList(
     req(input$PMHselector == "Physical Health")
     selection<-input$PMHselector
 
+
     PMHdata<-reactive({
       data[data$Type == 'PhysMH',]
     }) %>% bindCache(data[data$Type == 'PhysMH',])
-
 
 
 
@@ -862,5 +859,6 @@ tagList(
 
 
   })
+
 
 }

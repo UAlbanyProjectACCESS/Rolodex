@@ -5,4 +5,3 @@
 pkgload::load_all(export_all = F,helpers = F,attach_testthat = FALSE)
 options( "golem.app.prod" = TRUE)
 Rolodex::run_app() # add parameters here (if any)
-
