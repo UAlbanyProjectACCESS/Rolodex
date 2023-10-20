@@ -10,62 +10,12 @@
 app_server <- function(input, output, session) {
 
 
-  # Loading Data ------------------------------------------------
-
   # observeEvent(input$tab,{
   #   req(input$tab=="Tab1")
   #   data<-as.data.frame(data)
   #   PMHdata<-data[data$Type == 'PhysMH',]
   # })
 
-PMHdata<-reactive({
-data[data$Type == 'PhysMH',]
-}) %>% bindCache(data[data$Type == 'PhysMH',])
-
-MHdata<-reactive({
-data[data$Type == 'MH',]
-}) %>% bindCache(data[data$Type == 'MH',])
-
-MHBC<-reactive({
-data[data$Type == 'MHBC',]
-}) %>% bindCache(data[data$Type == 'MHBC',])
-
-SLGBT<-reactive({
-  data[data$Type == 'SLGBT',]
-}) %>% bindCache(data[data$Type == 'SLGBT',])
-
-HIVSTI<-reactive({
-  data[data$Type == 'HIVSTI',]
-}) %>% bindCache(data[data$Type == 'HIVSTI',])
-
-SVdata<-reactive({
-  data[data$Type == 'SV',]
-}) %>%  bindCache(data[data$Type == 'SV',])
-
-AODdata<-reactive({
-  data[data$Type == 'AOD',]
-}) %>% bindCache(data[data$Type == 'AOD',])
-
-GAMBdata<-reactive({
-  data[data$Type == 'GAMB',]
-}) %>% bindCache(data[data$Type == 'GAMB',])
-
-Acadata<-reactive({
-  data[data$Type == 'Aca',]
-}) %>% bindCache(data[data$Type == 'Aca',])
-
-
-FHFdata<-reactive({
-  data[data$Type == 'FHF',]
-}) %>% bindCache(data[data$Type == 'FHF',])
-
-Legaldata<-reactive({
-  data[data$Type == 'Legal',]
-}) %>% bindCache(data[data$Type == 'Legal',])
-
-HLdata<-reactive({
-  data[data$Type == 'Hotline',]
-}) %>% bindCache(data[data$Type == 'Hotline',])
 
   # Welcome Page ------------------------------------------------------------
   observeEvent(input$helppopup, {
@@ -356,7 +306,15 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Physical Health")
     selection<-input$PMHselector
-    # PMHdata<-data[data$Type == 'PhysMH',]
+
+    PMHdata<-reactive({
+      data[data$Type == 'PhysMH',]
+    }) %>% bindCache(data[data$Type == 'PhysMH',])
+
+
+
+
+
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -422,7 +380,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Mental Health (MH)")
     selection<-input$PMHselector
-    # MHdata<-data[data$Type == 'MH',]
+    MHdata<-reactive({
+      data[data$Type == 'MH',]
+    }) %>% bindCache(data[data$Type == 'MH',])
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -468,7 +428,10 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "MH Resources (Black Communities)")
     selection<-input$PMHselector
-    # MHBC<-data[data$Type == 'MHBC',]
+    MHBC<-reactive({
+      data[data$Type == 'MHBC',]
+    }) %>% bindCache(data[data$Type == 'MHBC',])
+
 
     mod_Accordion_server('akkoma', selector=selection, data=MHBC(), title = c('AAKOMA Project'), Visible = T)
     mod_info_server('akkoma', selector = selection, data = MHBC(), rownametitle = c('AAKOMA Project'), phone = F, website = T)
@@ -502,7 +465,11 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "MH Resources (Hispanic Communities)")
     selection<-input$PMHselector
-    # MHLC<-data[data$Type == 'MHLC',]
+
+    MHLC<-reactive({
+      data[data$Type == 'MHLC',]
+    }) %>% bindCache(data[data$Type == 'MHLC',])
+
 
 
     mod_Accordion_server('CDLatinos', selector=selection, data=MHLC(), title = c('Capital District Latinos'), Visible = T)
@@ -536,7 +503,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "LGBTQ+ Resources")
     selection<-input$PMHselector
-    # SLGBT<-data[data$Type == 'SLGBT',]
+    SLGBT<-reactive({
+      data[data$Type == 'SLGBT',]
+    }) %>% bindCache(data[data$Type == 'SLGBT',])
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -602,7 +571,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Sexual Health")
     selection<-input$PMHselector
-    HIVSTI<-data[data$Type == 'HIVSTI',]
+    HIVSTI<-reactive({
+      data[data$Type == 'HIVSTI',]
+    }) %>% bindCache(data[data$Type == 'HIVSTI',])
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -697,7 +668,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Alcohol and Other Drugs")
     selection<-input$PMHselector
-    # AODdata<-data[data$Type == 'AOD',]
+    AODdata<-reactive({
+      data[data$Type == 'AOD',]
+    }) %>% bindCache(data[data$Type == 'AOD',])
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -744,7 +717,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Problem Gambling")
     selection<-input$PMHselector
-    # GAMBdata<-data[data$Type == 'GAMB',]
+    GAMBdata<-reactive({
+      data[data$Type == 'GAMB',]
+    }) %>% bindCache(data[data$Type == 'GAMB',])
 
     mod_Accordion_server('GAMB_Escreener', selector=selection, data=GAMBdata(), title = c('NYS Gambling E-Screener'), Visible = T)
     mod_info_server('GAMB_Escreener', selector = selection, data = GAMBdata(), rownametitle = c('NYS Gambling E-Screener'), phone = F, website = T)
@@ -773,7 +748,10 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Academic Resources")
     selection<-input$PMHselector
-    # Acadata<-data[data$Type == 'Aca',]
+    Acadata<-reactive({
+      data[data$Type == 'Aca',]
+    }) %>% bindCache(data[data$Type == 'Aca',])
+
 
     mod_Accordion_server('ACA_lib', selector=selection, data=Acadata(), title = c('University Libraries'), Visible = T)
     mod_info_server('ACA_lib', selector = selection, data = Acadata(), rownametitle = c('University Libraries'), phone = T, website = T)
@@ -801,7 +779,10 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Food, Housing, & Financial")
     selection<-input$PMHselector
-    # FHFdata<-data[data$Type == 'FHF',]
+    FHFdata<-reactive({
+      data[data$Type == 'FHF',]
+    }) %>% bindCache(data[data$Type == 'FHF',])
+
     mod_Accordion_server('FAO', selector=selection, data=FHFdata(), title = c('Financial Aid Office'), Visible = T)
     mod_info_server('FAO', selector = selection, data = FHFdata(), rownametitle = c('Financial Aid Office'), phone = T, website = T)
     mod_Accordion_server('PurplePantry', selector=selection, data=FHFdata(), title = c('Purple Pantry'), Visible = T)
@@ -826,7 +807,9 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Legal Resources")
     selection<-input$PMHselector
-    # Legaldata<-data[data$Type == 'Legal',]
+    Legaldata<-reactive({
+      data[data$Type == 'Legal',]
+    }) %>% bindCache(data[data$Type == 'Legal',])
     observeEvent(input$OffCampus,{
 
       if(input$OffCampus == F) {
@@ -856,7 +839,10 @@ tagList(
   observeEvent(input$PMHselector,{
     req(input$PMHselector == "Hotlines")
     selection<-input$PMHselector
-    # HLdata<-data[data$Type == 'Hotline',]
+    HLdata<-reactive({
+      data[data$Type == 'Hotline',]
+    }) %>% bindCache(data[data$Type == 'Hotline',])
+
     mod_Accordion_server('HL_FindAHelpline', selector=selection, data=HLdata(), title = c('Find a Helpline'), Visible = T)
     mod_info_server('HL_FindAHelpline', selector = selection, data = HLdata(), rownametitle = c('Find a Helpline'), phone = F, website = T)
     mod_Accordion_server('HL_NYSsupport', selector=selection, data=HLdata(), title = c('New York State Support Line'), Visible = T)
