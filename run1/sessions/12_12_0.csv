@@ -1,0 +1,5 @@
+# http://localhost:3838/ --workers 50 --loaded-duration-minutes 2 --output-dir run1
+# {"appUrl":"http://localhost:3838/","debugLog":false,"loadedDurationMinutes":2.0,"logLevel":"WARN","outputDir":"run1","overwriteOutput":false,"recordingPath":"recording.log","workers":50}
+session_id,worker_id,iteration,event,timestamp,input_line_number,comment
+12,12,0,PLAYER_SESSION_CREATE,1697758009897,0,
+12,12,0,REQ_HOME_START,1697758009898,4,
