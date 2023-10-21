@@ -8,6 +8,7 @@
 #' @import magrittr
 #' @noRd
 app_server <- function(input, output, session) {
+  # shinyOptions(cache = cachem::cache_mem(max_size = 500e6))
   # Welcome Page ------------------------------------------------------------
   observeEvent(input$helppopup, {
     f7Popup(id="NewUserintro1", title= f7Align(h3("Quick Introduction"), side=c("center")), swipeToClose = T, closeButton = T,
