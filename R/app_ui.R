@@ -208,6 +208,10 @@ app_ui <- function(request) {
                                      f7Accordion(h4("Alcohol and Other Drugs"), multiCollapse = F,
                                                  mod_Accordion_ui('AOD_OHP'),
                                                  mod_Accordion_ui('AOD_NUA'),
+                                                 mod_Accordion_ui('AOD_NaloxoneCal'),
+                                                 mod_Accordion_ui('AOD_SMART'),
+                                                 mod_Accordion_ui('AOD_Refuge'),
+                                                 mod_Accordion_ui('AOD_Aameetings'),
                                                  mod_Accordion_ui('AOD_Equinox'),
                                                  mod_Accordion_ui('AOD_ACCAlbany'),
                                                  mod_Accordion_ui('AOD_OASASlocator')

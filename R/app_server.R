@@ -695,6 +695,14 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_ACCAlbany', selector = selection, data = AODdata(), rownametitle = c('Addictions Care Center of Albany'), phone = T, website = T)
           mod_Accordion_server('AOD_OASASlocator', selector=selection, data=AODdata(), title = c('OASAS Treatment Locator'), Visible = F)
           mod_info_server('AOD_OASASlocator', selector = selection, data = AODdata(), rownametitle = c('OASAS Treatment Locator'), phone = T, website = T)
+          mod_Accordion_server('AOD_NaloxoneCal', selector=selection, data=AODdata(), title = c('OASAS Naloxone Training Calendar'), Visible = F)
+          mod_info_server('AOD_NaloxoneCal', selector = selection, data = AODdata(), rownametitle = c('OASAS Naloxone Training Calendar'), phone = F, website = T)
+          mod_Accordion_server('AOD_SMART', selector=selection, data=AODdata(), title = c('SMART Recovery Meetings'), Visible = F)
+          mod_info_server('AOD_SMART', selector = selection, data = AODdata(), rownametitle = c('SMART Recovery Meetings'), phone = F, website = T)
+          mod_Accordion_server('AOD_Refuge', selector=selection, data=AODdata(), title = c('Refuge Recovery Meetings'), Visible = F)
+          mod_info_server('AOD_Refuge', selector = selection, data = AODdata(), rownametitle = c('Refuge Recovery Meetings'), phone = F, website = T)
+          mod_Accordion_server('AOD_Aameetings', selector=selection, data=AODdata(), title = c('AA Meetings'), Visible = F)
+          mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
 
 
 
@@ -710,6 +718,14 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_ACCAlbany', selector = selection, data = AODdata(), rownametitle = c('Addictions Care Center of Albany'), phone = T, website = T)
           mod_Accordion_server('AOD_OASASlocator', selector=selection, data=AODdata(), title = c('OASAS Treatment Locator'), Visible = T)
           mod_info_server('AOD_OASASlocator', selector = selection, data = AODdata(), rownametitle = c('OASAS Treatment Locator'), phone = T, website = T)
+          mod_Accordion_server('AOD_NaloxoneCal', selector=selection, data=AODdata(), title = c('OASAS Naloxone Training Calendar'), Visible = T)
+          mod_info_server('AOD_NaloxoneCal', selector = selection, data = AODdata(), rownametitle = c('OASAS Naloxone Training Calendar'), phone = F, website = T)
+          mod_Accordion_server('AOD_SMART', selector=selection, data=AODdata(), title = c('SMART Recovery Meetings'), Visible = T)
+          mod_info_server('AOD_SMART', selector = selection, data = AODdata(), rownametitle = c('SMART Recovery Meetings'), phone = F, website = T)
+          mod_Accordion_server('AOD_Refuge', selector=selection, data=AODdata(), title = c('Refuge Recovery Meetings'), Visible = T)
+          mod_info_server('AOD_Refuge', selector = selection, data = AODdata(), rownametitle = c('Refuge Recovery Meetings'), phone = F, website = T)
+          mod_Accordion_server('AOD_Aameetings', selector=selection, data=AODdata(), title = c('AA Meetings'), Visible = T)
+          mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
 
 
 
