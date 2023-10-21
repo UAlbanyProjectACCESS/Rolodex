@@ -8,15 +8,6 @@
 #' @import magrittr
 #' @noRd
 app_server <- function(input, output, session) {
-
-
-  # observeEvent(input$tab,{
-  #   req(input$tab=="Tab1")
-  #   data<-as.data.frame(data)
-  #   PMHdata<-data[data$Type == 'PhysMH',]
-  # })
-
-
   # Welcome Page ------------------------------------------------------------
   observeEvent(input$helppopup, {
     f7Popup(id="NewUserintro1", title= f7Align(h3("Quick Introduction"), side=c("center")), swipeToClose = T, closeButton = T,
@@ -154,7 +145,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
   # Install App Instructions Card -------------------------------------------
   output$installapp <- renderUI({
-tagList(
+    tagList(
     f7Accordion(id=NULL,
                 f7AccordionItem(title = "iPhone", open=F, multiCollapse=F,
                                 f7Block(br(),
@@ -181,7 +172,7 @@ tagList(
 
   # Navigator & STI Appointment Page ----------------------------------------------
   observeEvent(input$tab,{
-    req(input$tab=="ApptTab")
+    if(input$tab=="ApptTab"){
     output$appts<- renderUI({
       tagList(
         f7Accordion(id=NULL,
@@ -252,7 +243,7 @@ tagList(
                                     ))))
 
     })
-
+}
 
   })
 
@@ -260,7 +251,7 @@ tagList(
 
   # Instagram Link ----------------------------------------------------------
   observeEvent(input$tab,{
-    req(input$tab=="Insta")
+    if(input$tab=="Insta"){
     output$instalink<-renderUI({
       tagList(
         h3("What we post:"),
@@ -272,6 +263,7 @@ tagList(
       )
 
     })
+    }
   })
 
 
