@@ -209,6 +209,7 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('AOD_OHP'),
                                                  mod_Accordion_ui('AOD_NUA'),
                                                  mod_Accordion_ui('AOD_NUAspanish'),
+                                                 mod_Accordion_ui('AOD_BraveAPP'),
                                                  mod_Accordion_ui('AOD_NaloxoneCal'),
                                                  mod_Accordion_ui('AOD_SMART'),
                                                  mod_Accordion_ui('AOD_Refuge'),
