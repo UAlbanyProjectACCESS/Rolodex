@@ -687,8 +687,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
           mod_Accordion_server('AOD_OHP', selector=selection, data=AODdata(), title = c('Collegiate Recovery Program'), Visible = T)
           mod_info_server('AOD_OHP', selector = selection, data = AODdata(), rownametitle = c('Collegiate Recovery Program'), phone = T, website = T)
-          mod_Accordion_server('AOD_NUA', selector=selection, data=AODdata(), title = c('Never Use Alone'), Visible = F)
-          mod_info_server('AOD_NUA', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone'), phone = T, website = T)
+          mod_Accordion_server('AOD_NUA', selector=selection, data=AODdata(), title = c('Never Use Alone (English)'), Visible = F)
+          mod_info_server('AOD_NUA', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone (English)'), phone = T, website = T)
+          mod_Accordion_server('AOD_NUAspanish', selector=selection, data=AODdata(), title = c('Never Use Alone (Spanish)'), Visible = F)
+          mod_info_server('AOD_NUAspanish', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone (Spanish)'), phone = T, website = T)
           mod_Accordion_server('AOD_Equinox', selector=selection, data=AODdata(), title = c('Equinox'), Visible = F)
           mod_info_server('AOD_Equinox', selector = selection, data = AODdata(), rownametitle = c('Equinox'), phone = T, website = T)
           mod_Accordion_server('AOD_ACCAlbany', selector=selection, data=AODdata(), title = c('Addictions Care Center of Albany'), Visible = F)
@@ -707,11 +709,16 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
 
 
+
+
+
         } else {
           mod_Accordion_server('AOD_OHP', selector=selection, data=AODdata(), title = c('Collegiate Recovery Program'), Visible = T)
           mod_info_server('AOD_OHP', selector = selection, data = AODdata(), rownametitle = c('Collegiate Recovery Program'), phone = T, website = T)
-          mod_Accordion_server('AOD_NUA', selector=selection, data=AODdata(), title = c('Never Use Alone'), Visible = T)
-          mod_info_server('AOD_NUA', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone'), phone = T, website = T)
+          mod_Accordion_server('AOD_NUA', selector=selection, data=AODdata(), title = c('Never Use Alone (English)'), Visible = T)
+          mod_info_server('AOD_NUA', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone (English)'), phone = T, website = T)
+          mod_Accordion_server('AOD_NUAspanish', selector=selection, data=AODdata(), title = c('Never Use Alone (Spanish)'), Visible = T)
+          mod_info_server('AOD_NUAspanish', selector = selection, data = AODdata(), rownametitle = c('Never Use Alone (Spanish)'), phone = T, website = T)
           mod_Accordion_server('AOD_Equinox', selector=selection, data=AODdata(), title = c('Equinox'), Visible = T)
           mod_info_server('AOD_Equinox', selector = selection, data = AODdata(), rownametitle = c('Equinox'), phone = T, website = T)
           mod_Accordion_server('AOD_ACCAlbany', selector=selection, data=AODdata(), title = c('Addictions Care Center of Albany'), Visible = T)
