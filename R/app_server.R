@@ -80,6 +80,7 @@ app_server <- function(input, output, session) {
                                           h4("We offer appointments with peer-navigators to explore free on- and off-campus resources,
                                             education events that help you thrive as a student and in life, and connections to confidential and anonymous on-campus STI testing provided by our community partners"),
                                           HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/mbkk2nPw8gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+                                          f7Align(div(f7Link(h3("Learn more about Project ACCESS"), href="https://www.albany.edu/education/research/behavioral-health-promotion#tab-project-access")),side=c("center")),
                                           f7Align(h6("DEVELOPED IN PART UNDER GRANT NUMBER 1H79SP082142-01 FROM THE SUBSTANCE ABUSE AND MENTAL HEALTH SERVICES ADMINISTRATION (SAMHSA) U.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES (HHS)."), side=c("center")),
                                           hr()
                                   )
