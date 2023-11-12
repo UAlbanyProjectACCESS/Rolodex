@@ -1,10 +1,9 @@
 Package: Rolodex
 Title: Rolodex
-Version: 1.0.0.2000
-Authors@R: 
-    person("Evan", "Ozmat", , "eozmat@albany.edu", role = c("cre", "aut"))
-Description: Project ACCESS Resource Rolodex App.
-License: MIT + file LICENSE
+Version: 1.1.0.0000
+Authors@R: person('Evan', 'Ozmat', email = 'eozmat@albany.edu', role = c('cre', 'aut'))
+Description: Project ACCESS Resource Rolodex App is a progressive web application built for Project ACCESS, a SAMHSA-funded translational research initiative, to help UAlbany students access on- and off-campus resources and referrals to support academic success!
+License: Apache License (>= 2)
 Depends: 
     R (>= 2.10)
 Imports: 

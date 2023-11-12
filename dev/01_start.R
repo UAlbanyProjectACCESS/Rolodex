@@ -21,12 +21,12 @@
 golem::fill_desc(
   pkg_name = "Rolodex", # The Name of the package containing the App
   pkg_title = "Rolodex", # The Title of the package containing the App
-  pkg_description = "Project ACCESS Resource Rolodex App.", # The Description of the package containing the App
+  pkg_description = "Project ACCESS Resource Rolodex App is a progressive web application built for Project ACCESS, a SAMHSA-funded translational research initiative, to help UAlbany students access on- and off-campus resources and referrals to support academic success!", # The Description of the package containing the App
   author_first_name = "Evan", # Your First Name
   author_last_name = "Ozmat", # Your Last Name
   author_email = "eozmat@albany.edu", # Your Email
   repo_url = NULL, # The URL of the GitHub Repo (optional),
-  pkg_version = "1.0.0.2000" # The Version of the package containing the App
+  pkg_version = "1.1.0.0000" # The Version of the package containing the App
 )
 
 ## Set {golem} options ----
@@ -37,7 +37,8 @@ golem::install_dev_deps()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license("Golem User") # You can set another license here
+usethis::use_apache_license(version = 2)
+# usethis::use_mit_license("Golem User") # You can set another license here
 # usethis::use_readme_rmd(open = FALSE)
 # devtools::build_readme()
 # Note that `contact` is required since usethis version 2.1.5
