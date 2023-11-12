@@ -207,6 +207,7 @@ app_ui <- function(request) {
                     conditionalPanel("input.PMHselector == 'Alcohol and Other Drugs'",
                                      f7Accordion(h4("Alcohol and Other Drugs"), multiCollapse = F,
                                                  mod_Accordion_ui('AOD_OHP'),
+                                                 mod_Accordion_ui('AOD_CampusDrugPrevINDEX'),
                                                  mod_Accordion_ui('AOD_NUA'),
                                                  mod_Accordion_ui('AOD_NUAspanish'),
                                                  mod_Accordion_ui('AOD_BraveAPP'),

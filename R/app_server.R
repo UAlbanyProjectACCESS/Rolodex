@@ -708,6 +708,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_Refuge', selector = selection, data = AODdata(), rownametitle = c('Refuge Recovery Meetings'), phone = F, website = T)
           mod_Accordion_server('AOD_Aameetings', selector=selection, data=AODdata(), title = c('AA Meetings'), Visible = F)
           mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
+          mod_Accordion_server('AOD_CampusDrugPrevINDEX', selector=selection, data=AODdata(), title = c('Drug Index (CampusDrugPrevention.gov)'), Visible = F)
+          mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
+
 
 
 
@@ -738,7 +741,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_Refuge', selector = selection, data = AODdata(), rownametitle = c('Refuge Recovery Meetings'), phone = F, website = T)
           mod_Accordion_server('AOD_Aameetings', selector=selection, data=AODdata(), title = c('AA Meetings'), Visible = T)
           mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
-
+          mod_Accordion_server('AOD_CampusDrugPrevINDEX', selector=selection, data=AODdata(), title = c('Drug Index (CampusDrugPrevention.gov)'), Visible = T)
+          mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
 
 
         }
