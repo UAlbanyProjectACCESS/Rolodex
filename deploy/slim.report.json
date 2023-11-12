@@ -5,7 +5,7 @@
   "host_distro": {
     "name": "Ubuntu",
     "version": "22.04",
-    "display_name": "Ubuntu 22.04.2 LTS"
+    "display_name": "Ubuntu 22.04.3 LTS"
   },
   "type": "build",
   "state": "done",
@@ -21,7 +21,7 @@
   },
   "source_image": {
     "identity": {
-      "id": "sha256:bed6dc2ba7218f028557a7e9408f7b30f1ea3c9be205f1c3fc38b54b97bc1027",
+      "id": "sha256:115d36ad97070bf94ea1a73e7aadfdf655dc82cf1ff0ad79efed569f9a8fc814",
       "tags": [
         "latest"
       ],
@@ -29,9 +29,9 @@
         "rolodex:latest"
       ]
     },
-    "size": 3950471468,
+    "size": 3961328546,
     "size_human": "4.0 GB",
-    "create_time": "2023-11-06T14:38:35Z",
+    "create_time": "2023-11-12T20:21:24Z",
     "docker_version": "",
     "architecture": "amd64",
     "exposed_ports": [
@@ -69,27 +69,27 @@
       "exe_path": ""
     }
   },
-  "minified_image_size": 498095890,
+  "minified_image_size": 498103025,
   "minified_image_size_human": "498 MB",
   "minified_image": "rolodex.slim",
   "minified_image_has_data": true,
-  "minified_by": 7.931146486673479,
-  "artifact_location": "/tmp/slim-state/.slim-state/images/bed6dc2ba7218f028557a7e9408f7b30f1ea3c9be205f1c3fc38b54b97bc1027/artifacts",
+  "minified_by": 7.952829730355482,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/115d36ad97070bf94ea1a73e7aadfdf655dc82cf1ff0ad79efed569f9a8fc814/artifacts",
   "container_report_name": "creport.json",
   "seccomp_profile_name": "rolodex-seccomp.json",
   "apparmor_profile_name": "rolodex-apparmor-profile",
   "image_stack": [
     {
       "is_top_image": true,
-      "id": "sha256:bed6dc2ba7218f028557a7e9408f7b30f1ea3c9be205f1c3fc38b54b97bc1027",
+      "id": "sha256:115d36ad97070bf94ea1a73e7aadfdf655dc82cf1ff0ad79efed569f9a8fc814",
       "full_name": "rolodex:latest",
       "repo_name": "rolodex",
       "version_tag": "latest",
       "raw_tags": [
         "rolodex:latest"
       ],
-      "create_time": "2023-11-06T14:38:35Z",
-      "new_size": 3950471468,
+      "create_time": "2023-11-12T20:21:24Z",
+      "new_size": 3961328546,
       "new_size_human": "4.0 GB",
       "instructions": [
         {
@@ -104,7 +104,7 @@
           "command_all": "ARG RELEASE",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "ARG",
@@ -118,7 +118,7 @@
           "command_all": "ARG LAUNCHPAD_BUILD_ARCH",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "LABEL",
@@ -132,7 +132,7 @@
           "command_all": "LABEL org.opencontainers.image.ref.name=ubuntu",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "LABEL",
@@ -146,7 +146,7 @@
           "command_all": "LABEL org.opencontainers.image.version=22.04",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "ADD",
@@ -163,7 +163,7 @@
           "source_type": "file",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "CMD",
@@ -178,7 +178,7 @@
           "command_all": "CMD [\"/bin/bash\"]\n",
           "inst_set_time_bucket": "2023-10-05T03:30:00-04:00",
           "inst_set_time_index": 0,
-          "inst_set_time_reverse_index": 5
+          "inst_set_time_reverse_index": 6
         },
         {
           "type": "LABEL",
@@ -194,7 +194,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:00:00-04:00",
           "inst_set_time_index": 1,
-          "inst_set_time_reverse_index": 4
+          "inst_set_time_reverse_index": 5
         },
         {
           "type": "ENV",
@@ -210,7 +210,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:00:00-04:00",
           "inst_set_time_index": 1,
-          "inst_set_time_reverse_index": 4
+          "inst_set_time_reverse_index": 5
         },
         {
           "type": "ENV",
@@ -226,7 +226,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:00:00-04:00",
           "inst_set_time_index": 1,
-          "inst_set_time_reverse_index": 4
+          "inst_set_time_reverse_index": 5
         },
         {
           "type": "ENV",
@@ -242,7 +242,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:00:00-04:00",
           "inst_set_time_index": 1,
-          "inst_set_time_reverse_index": 4
+          "inst_set_time_reverse_index": 5
         },
         {
           "type": "COPY",
@@ -259,7 +259,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:00:00-04:00",
           "inst_set_time_index": 1,
-          "inst_set_time_reverse_index": 4
+          "inst_set_time_reverse_index": 5
         },
         {
           "type": "RUN",
@@ -278,7 +278,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "ENV",
@@ -294,7 +294,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "ENV",
@@ -310,7 +310,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "COPY",
@@ -327,7 +327,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "RUN",
@@ -346,7 +346,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "CMD",
@@ -363,7 +363,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T06:15:00-04:00",
           "inst_set_time_index": 2,
-          "inst_set_time_reverse_index": 3
+          "inst_set_time_reverse_index": 4
         },
         {
           "type": "LABEL",
@@ -379,7 +379,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "ENV",
@@ -395,7 +395,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "ENV",
@@ -411,7 +411,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "ENV",
@@ -427,7 +427,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "ENV",
@@ -443,7 +443,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "ENV",
@@ -459,7 +459,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "RUN",
@@ -478,7 +478,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "RUN",
@@ -497,7 +497,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "RUN",
@@ -516,7 +516,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "EXPOSE",
@@ -532,7 +532,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "CMD",
@@ -549,7 +549,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T08:45:00-04:00",
           "inst_set_time_index": 3,
-          "inst_set_time_reverse_index": 2
+          "inst_set_time_reverse_index": 3
         },
         {
           "type": "LABEL",
@@ -565,7 +565,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "RUN",
@@ -584,7 +584,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "LABEL",
@@ -600,7 +600,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "ENV",
@@ -616,7 +616,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "ENV",
@@ -632,7 +632,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "RUN",
@@ -651,7 +651,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-10-31T09:00:00-04:00",
           "inst_set_time_index": 4,
-          "inst_set_time_reverse_index": 1
+          "inst_set_time_reverse_index": 2
         },
         {
           "type": "RUN",
@@ -672,7 +672,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
           "inst_set_time_index": 5,
-          "inst_set_time_reverse_index": 0
+          "inst_set_time_reverse_index": 1
         },
         {
           "type": "RUN",
@@ -690,7 +690,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
           "inst_set_time_index": 5,
-          "inst_set_time_reverse_index": 0
+          "inst_set_time_reverse_index": 1
         },
         {
           "type": "RUN",
@@ -709,7 +709,7 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
           "inst_set_time_index": 5,
-          "inst_set_time_reverse_index": 0
+          "inst_set_time_reverse_index": 1
         },
         {
           "type": "RUN",
@@ -728,33 +728,33 @@
           "is_buildkit_instruction": true,
           "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
           "inst_set_time_index": 5,
-          "inst_set_time_reverse_index": 0
+          "inst_set_time_reverse_index": 1
         },
         {
           "type": "COPY",
-          "time": "2023-11-06T14:33:22Z",
+          "time": "2023-11-12T20:18:30Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 13824,
+          "size": 13822,
           "size_human": "14 kB",
           "params": "renv.lock.prod renv.lock",
           "command_snippet": "COPY renv.lock.prod renv.lock",
           "command_all": "COPY renv.lock.prod renv.lock",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-11-06T14:33:44Z",
+          "time": "2023-11-12T20:18:59Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 345358186,
-          "size_human": "345 MB",
+          "size": 352430856,
+          "size_human": "352 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
           "system_commands": [
@@ -762,35 +762,35 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "COPY",
-          "time": "2023-11-06T14:36:57Z",
+          "time": "2023-11-12T20:19:27Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 13824,
+          "size": 13822,
           "size_human": "14 kB",
           "params": "renv.lock.prod renv.lock",
           "command_snippet": "COPY renv.lock.prod renv.lock",
           "command_all": "COPY renv.lock.prod renv.lock",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-11-06T14:37:02Z",
+          "time": "2023-11-12T20:19:33Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 170521334,
-          "size_human": "170 MB",
+          "size": 174049624,
+          "size_human": "174 MB",
           "command_snippet": "RUN R -e 'renv::restore()'",
           "command_all": "RUN R -e 'renv::restore()'",
           "system_commands": [
@@ -798,34 +798,34 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "COPY",
-          "time": "2023-11-06T14:37:02Z",
+          "time": "2023-11-12T20:19:33Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 497522,
+          "size": 497898,
           "size_human": "498 kB",
           "params": "Rolodex_*.tar.gz /app.tar.gz",
           "command_snippet": "COPY Rolodex_*.tar.gz /app.tar.gz",
           "command_all": "COPY Rolodex_*.tar.gz /app.tar.gz",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-11-06T14:38:35Z",
+          "time": "2023-11-12T20:21:24Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
-          "size": 72912492,
+          "size": 73168238,
           "size_human": "73 MB",
           "command_snippet": "RUN R -e 'remotes::install_github(\"EwokOzwok...",
           "command_all": "RUN R -e 'remotes::install_github(\"EwokOzwok/Rolodex\")'",
@@ -834,13 +834,13 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "RUN",
-          "time": "2023-11-06T14:38:35Z",
+          "time": "2023-11-12T20:21:24Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -852,13 +852,13 @@
           ],
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "EXPOSE",
-          "time": "2023-11-06T14:38:35Z",
+          "time": "2023-11-12T20:21:24Z",
           "is_nop": false,
           "local_image_exists": false,
           "layer_index": 0,
@@ -868,13 +868,13 @@
           "command_all": "EXPOSE 3838/tcp",
           "comment": "buildkit.dockerfile.v0",
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         },
         {
           "type": "CMD",
-          "time": "2023-11-06T14:38:35Z",
+          "time": "2023-11-12T20:21:24Z",
           "is_last_instruction": true,
           "is_nop": false,
           "local_image_exists": true,
@@ -888,8 +888,8 @@
             "rolodex:latest"
           ],
           "is_buildkit_instruction": true,
-          "inst_set_time_bucket": "2023-11-06T09:30:00-05:00",
-          "inst_set_time_index": 5,
+          "inst_set_time_bucket": "2023-11-12T15:15:00-05:00",
+          "inst_set_time_index": 6,
           "inst_set_time_reverse_index": 0
         }
       ]
