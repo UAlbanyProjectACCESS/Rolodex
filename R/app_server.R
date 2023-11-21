@@ -392,6 +392,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MHsuicideFound',selector=selection, data=MHdata(), rownametitle=c("American Foundation for Suicide Prevention Capital Region"), phone=T, website=T)
           mod_info_server('Mhnyspa',selector=selection, data=MHdata(), rownametitle=c("Find a Psychologist (NYSPA)"), phone=F, website=T)
           mod_info_server('Mhpsychtoday',selector=selection, data=MHdata(), rownametitle=c("Find a Therapist (Psych Today)"), phone=F, website=T)
+          mod_Accordion_server('MH_SuicideLifeline', selector=selection, data=MHdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = F)
+          mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+
 
         } else {
           mod_Accordion_server('Mhcaps', selector=selection, data=MHdata(), title=c("Counseling and Psychological Services Center (CAPS)"),Visible = T)
@@ -408,6 +411,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MHsuicideFound',selector=selection, data=MHdata(), rownametitle=c("American Foundation for Suicide Prevention Capital Region"), phone=T, website=T)
           mod_info_server('Mhnyspa',selector=selection, data=MHdata(), rownametitle=c("Find a Psychologist (NYSPA)"), phone=F, website=T)
           mod_info_server('Mhpsychtoday',selector=selection, data=MHdata(), rownametitle=c("Find a Therapist (Psych Today)"), phone=F, website=T)
+          mod_Accordion_server('MH_SuicideLifeline', selector=selection, data=MHdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+          mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+
         }
       })
 }
@@ -897,6 +903,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('HL_NYSgamb', selector = selection, data = HLdata(), rownametitle = c("New York State Gambler's Hotline"), phone = T, website = T)
       mod_Accordion_server('HL_NtnlGAMB', selector=selection, data=HLdata(), title = c('National Gambler Support Line'), Visible = T)
       mod_info_server('HL_NtnlGAMB', selector = selection, data = HLdata(), rownametitle = c('National Gambler Support Line'), phone = T, website = T)
+      mod_Accordion_server('HL_SuicideLifeline', selector=selection, data=HLdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+      mod_info_server('HL_SuicideLifeline', selector = selection, data = HLdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 
 
