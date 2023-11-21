@@ -453,8 +453,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('TherapyBlackGirls', selector = selection, data = MHBC(), rownametitle = c('Therapy for Black Girls'), phone = F, website = T)
       mod_Accordion_server('TherapyBlackMen', selector=selection, data=MHBC(), title = c('Therapy for Black Men'), Visible = T)
       mod_info_server('TherapyBlackMen', selector = selection, data = MHBC(), rownametitle = c('Therapy for Black Men'), phone = F, website = T)
-      mod_Accordion_server('MHBC_SuicideLifeline', selector=selection, data=MHBCdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
-      mod_info_server('MHBC_SuicideLifeline', selector = selection, data = MHBCdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+      mod_Accordion_server('MHBC_SuicideLifeline', selector=selection, data=MHBC(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+      mod_info_server('MHBC_SuicideLifeline', selector = selection, data = MHBC(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 }
 
@@ -505,8 +505,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('MHLCpocagainstsuicide', selector = selection, data = MHLC(), rownametitle = c('National Organization for People of Color Against Suicide'), phone = F, website = T)
       mod_Accordion_server('MHLCqtTherapistsofColor', selector=selection, data=MHLC(), title = c('Queer & Trans Therapists of Color'), Visible = T)
       mod_info_server('MHLCqtTherapistsofColor', selector = selection, data = MHLC(), rownametitle = c('National Queer & Trans Therapists of Color Network'), phone = F, website = T)
-      mod_Accordion_server('MHLC_SuicideLifeline', selector=selection, data=MHLCdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
-      mod_info_server('MHLC_SuicideLifeline', selector = selection, data = MHLCdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+      mod_Accordion_server('MHLC_SuicideLifeline', selector=selection, data=MHLC(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+      mod_info_server('MHLC_SuicideLifeline', selector = selection, data = MHLC(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 
     }
