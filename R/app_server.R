@@ -555,6 +555,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LGB_StudentLegal', selector = selection, data = SLGBT(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LGBTQ_SuicideLifeline', selector=selection, data=SLGBT(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = F)
           mod_info_server('LGBTQ_SuicideLifeline', selector = selection, data = SLGBT(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+          mod_Accordion_server('LGBTQ_TrevorProject', selector=selection, data=SLGBT(), title = c('The Trevor Project'), Visible = F)
+          mod_info_server('LGBTQ_TrevorProject', selector = selection, data = SLGBT(), rownametitle = c('The Trevor Project'), phone = T, website = T)
 
 
         } else {
@@ -581,6 +583,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LGB_StudentLegal', selector = selection, data = SLGBT(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LGBTQ_SuicideLifeline', selector=selection, data=SLGBT(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
           mod_info_server('LGBTQ_SuicideLifeline', selector = selection, data = SLGBT(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+          mod_Accordion_server('LGBTQ_TrevorProject', selector=selection, data=SLGBT(), title = c('The Trevor Project'), Visible = T)
+          mod_info_server('LGBTQ_TrevorProject', selector = selection, data = SLGBT(), rownametitle = c('The Trevor Project'), phone = T, website = T)
 
 
         }

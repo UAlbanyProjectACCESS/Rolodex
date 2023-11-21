@@ -174,6 +174,7 @@ app_ui <- function(request) {
                                      f7Accordion(h4("LGBTQ+ Resources"), multiCollapse = F,
                                                  mod_Accordion_ui('LGB_SHAPE'),
                                                  mod_Accordion_ui('LGB_StudentLegal'),
+                                                 mod_Accordion_ui('LGBTQ_TrevorProject'),
                                                  mod_Accordion_ui('LGB_pridecenter'),
                                                  mod_Accordion_ui('LBG_IOOV'),
                                                  mod_Accordion_ui('LGB_APH'),
