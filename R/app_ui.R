@@ -142,6 +142,7 @@ app_ui <- function(request) {
                     conditionalPanel("input.PMHselector == 'MH Resources (Black Communities)'",
                                      f7Accordion(h4("Mental Health Resources for Black Communities"), multiCollapse = F,
                                                  mod_Accordion_ui('akkoma'),
+                                                 mod_Accordion_ui('MHBC_SuicideLifeline'),
                                                  mod_Accordion_ui('BEAM'),
                                                  mod_Accordion_ui('BLHF'),
                                                  mod_Accordion_ui('BROMM'),
@@ -158,6 +159,7 @@ app_ui <- function(request) {
                     conditionalPanel("input.PMHselector == 'MH Resources (Hispanic Communities)'",
                                      f7Accordion(h4("Mental Health Resources for Hispanic Communities"), multiCollapse = F,
                                                  mod_Accordion_ui('CDLatinos'),
+                                                 mod_Accordion_ui('MHLC_SuicideLifeline'),
                                                  mod_Accordion_ui('MHLCInclusiveTherapists'),
                                                  mod_Accordion_ui('LifeisPrecious'),
                                                  mod_Accordion_ui('LatinXtherapy'),
@@ -179,7 +181,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('LGB_UHPP'),
                                                  mod_Accordion_ui('LGB_InclusiveTherapists'),
                                                  mod_Accordion_ui('LGB_Qttherapistsofcolor'),
-                                                 mod_Accordion_ui('LGB_LegalAIDNENY')
+                                                 mod_Accordion_ui('LGB_LegalAIDNENY'),
+                                                 mod_Accordion_ui('LGBTQ_SuicideLifeline')
+
                                      )),
 
 

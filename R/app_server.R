@@ -453,6 +453,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('TherapyBlackGirls', selector = selection, data = MHBC(), rownametitle = c('Therapy for Black Girls'), phone = F, website = T)
       mod_Accordion_server('TherapyBlackMen', selector=selection, data=MHBC(), title = c('Therapy for Black Men'), Visible = T)
       mod_info_server('TherapyBlackMen', selector = selection, data = MHBC(), rownametitle = c('Therapy for Black Men'), phone = F, website = T)
+      mod_Accordion_server('MHBC_SuicideLifeline', selector=selection, data=MHBCdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+      mod_info_server('MHBC_SuicideLifeline', selector = selection, data = MHBCdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 }
 
@@ -503,6 +505,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('MHLCpocagainstsuicide', selector = selection, data = MHLC(), rownametitle = c('National Organization for People of Color Against Suicide'), phone = F, website = T)
       mod_Accordion_server('MHLCqtTherapistsofColor', selector=selection, data=MHLC(), title = c('Queer & Trans Therapists of Color'), Visible = T)
       mod_info_server('MHLCqtTherapistsofColor', selector = selection, data = MHLC(), rownametitle = c('National Queer & Trans Therapists of Color Network'), phone = F, website = T)
+      mod_Accordion_server('MHLC_SuicideLifeline', selector=selection, data=MHLCdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+      mod_info_server('MHLC_SuicideLifeline', selector = selection, data = MHLCdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 
     }
@@ -549,6 +553,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LGB_LegalAIDNENY', selector = selection, data = SLGBT(), rownametitle = c('Legal Aid Society Northeastern New York'), phone = T, website = T)
           mod_Accordion_server('LGB_StudentLegal', selector=selection, data=SLGBT(), title = c('Student Legal Services'), Visible = T)
           mod_info_server('LGB_StudentLegal', selector = selection, data = SLGBT(), rownametitle = c('Student Legal Services'), phone = T, website = T)
+          mod_Accordion_server('LGBTQ_SuicideLifeline', selector=selection, data=SLGBT(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = F)
+          mod_info_server('LGBTQ_SuicideLifeline', selector = selection, data = SLGBT(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 
         } else {
@@ -573,6 +579,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LGB_LegalAIDNENY', selector = selection, data = SLGBT(), rownametitle = c('Legal Aid Society Northeastern New York'), phone = T, website = T)
           mod_Accordion_server('LGB_StudentLegal', selector=selection, data=SLGBT(), title = c('Student Legal Services'), Visible = T)
           mod_info_server('LGB_StudentLegal', selector = selection, data = SLGBT(), rownametitle = c('Student Legal Services'), phone = T, website = T)
+          mod_Accordion_server('LGBTQ_SuicideLifeline', selector=selection, data=SLGBT(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
+          mod_info_server('LGBTQ_SuicideLifeline', selector = selection, data = SLGBT(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
 
 
         }
