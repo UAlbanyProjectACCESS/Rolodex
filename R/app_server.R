@@ -28,6 +28,7 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("search"),"- Search for resources"),
                        h5(f7Icon("calendar_badge_plus"), "- Project ACCESS appointments"),
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
+                       h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
                        br(),
@@ -57,6 +58,7 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("search"),"- Search for resources"),
                        h5(f7Icon("calendar_badge_plus"), "- Project ACCESS appointments"),
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
+                       h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
                        br(),

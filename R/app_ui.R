@@ -339,6 +339,42 @@ app_ui <- function(request) {
                            F, tablet = FALSE)
                 )
           )
+#
+#           f7Tab(tabName="money",
+#                 active = FALSE,
+#                 icon = f7Icon("money_dollar_circle"),
+#
+#
+#                 f7Shadow(
+#                   intensity = 5,
+#                   hover = TRUE,
+#                   f7Card(
+#                     f7Block(
+#                       f7Align(h2("3-steps to earn a $30 Amazon Gift Card"), side=c("center")),
+#                       strong = T, inset = T, tablet = FALSE))),
+#
+#                 f7Shadow(
+#                   intensity = 5,
+#                   hover = TRUE,
+#                   f7Card(f7Align(h3("Step 1"), side=c("left")),
+#                          f7Align(h4("Schedule and attend an appointment with a Navigator"), side=c("left")),
+#                          f7Align(div(f7Link("Schedule a Navigator Appointment", href="https://calendly.com/d/g6j-syy-7z5")),side=c("left")),
+#                          hr(),
+#                          f7Align(h3("Step 2"), side=c("left")),
+#                          f7Align(h4("Complete the 10-minute survey sent via email before your appointment"), side=c("left")),
+#                          hr(),
+#                          f7Align(h3("Step 3"), side=c("left")),
+#                          f7Align(h4("Complete a 10-minute follow-up survey after the appointment"), side=c("left")),
+#                          hr(),
+#                          f7Align(h3("Thats all!"), side=c("center")),
+#                          f7Align(h5("Your responses on the survey are never connected to your name or identifying information. You'll receive 3 automated reminder emails with the follow-up survey link 25 days after you complete first survey and an appointment with a Project ACCESS Navigator"), side=c("center")),
+#                          f7Align(h5("Last semester we gave out over $2,000 in Amazon Gift Cards to UAlbany students!"), side=c("center")),
+#                          hairlines = F, strong = T, inset =
+#                            F, tablet = FALSE)
+#                 )
+#           )
+
+
         )
       )
     )
