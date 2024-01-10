@@ -783,6 +783,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         data[data$Type == 'GAMB',]
       }) %>% bindCache(data[data$Type == 'GAMB',])
 
+      mod_Accordion_server('GAMB_NYSmainwebsite', selector=selection, data=GAMBdata(), title = c('NYS Problem Gambling Help'), Visible = T)
+      mod_info_server('GAMB_NYSmainwebsite', selector = selection, data = GAMBdata(), rownametitle = c('NYS Problem Gambling Help'), phone = F, website = T)
       mod_Accordion_server('GAMB_Escreener', selector=selection, data=GAMBdata(), title = c('NYS Gambling E-Screener'), Visible = T)
       mod_info_server('GAMB_Escreener', selector = selection, data = GAMBdata(), rownametitle = c('NYS Gambling E-Screener'), phone = F, website = T)
       mod_Accordion_server('GAMB_NYShotline', selector=selection, data=GAMBdata(), title = c('New York State Gamblers Hotline'), Visible = T)

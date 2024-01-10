@@ -229,6 +229,7 @@ app_ui <- function(request) {
 
                     conditionalPanel("input.PMHselector == 'Problem Gambling'",
                                      f7Accordion(h4("Problem Gambling"), multiCollapse = F,
+                                                 mod_Accordion_ui('GAMB_NYSmainwebsite'),
                                                  mod_Accordion_ui('GAMB_Escreener'),
                                                  mod_Accordion_ui('GAMB_NYShotline'),
                                                  mod_Accordion_ui('GAMB_NtnlHotline'),
