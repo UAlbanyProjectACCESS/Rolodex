@@ -655,7 +655,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
     if(input$PMHselector == "Sexual Violence Related"){
       selection<-input$PMHselector
-      # SVdata<-data[data$Type == 'SV',]
+      SVdata<-reactive({
+        data[data$Type == 'SV',]
+      }) %>% bindCache(data[data$Type == 'SV',])
       observeEvent(input$OffCampus,{
 
         if(input$OffCampus == F) {
