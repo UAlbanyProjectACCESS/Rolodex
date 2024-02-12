@@ -28,7 +28,7 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("search"),"- Search for resources"),
                        h5(f7Icon("calendar_badge_plus"), "- Project ACCESS appointments"),
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
-                       h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
+                       # h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
                        br(),
@@ -58,7 +58,7 @@ app_server <- function(input, output, session) {
                        h5(f7Icon("search"),"- Search for resources"),
                        h5(f7Icon("calendar_badge_plus"), "- Project ACCESS appointments"),
                        h5(f7Icon("logo_instagram"), "- Follow us on Instagram"),
-                       h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
+                       # run_h5(f7Icon("money_dollar_circle"), "- Earn a $30 Amazon Gift Card"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE)),
                        br(),
@@ -799,6 +799,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('GAMB_gambAnon', selector = selection, data = GAMBdata(), rownametitle = c('Gam-Anon'), phone = F, website = T)
       mod_Accordion_server('GAMB_TxtLocator', selector=selection, data=GAMBdata(), title = c('Gambling Treatment Locator'), Visible = T)
       mod_info_server('GAMB_TxtLocator', selector = selection, data = GAMBdata(), rownametitle = c('OASAS Problem Gambling Treatment Locator'), phone = F, website = T)
+      mod_Accordion_server('GAMB_Knowtheodds', selector=selection, data=GAMBdata(), title = c('Know the Odds'), Visible = T)
+      mod_info_server('GAMB_Knowtheodds', selector = selection, data = GAMBdata(), rownametitle = c('Know the Odds'), phone = F, website = T)
+
 
 
 

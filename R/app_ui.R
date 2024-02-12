@@ -30,6 +30,10 @@ app_ui <- function(request) {
         f7Tabs(
           animated = TRUE,
           id = "tab",
+
+# Home Page Tab -----------------------------------------------------------
+
+
           f7Tab(
             tabName = "WelcomeTab",
             icon = f7Icon("house_fill"),
@@ -55,6 +59,9 @@ app_ui <- function(request) {
 
             f7Align(div(f7Link("Report a bug or issue with the app", href="https://forms.gle/e74AyNsW7jvMqsSt6")), side=c("center"))
           ),
+
+
+# Resources Tab -----------------------------------------------------------
 
 
             f7Tab(
@@ -109,6 +116,9 @@ app_ui <- function(request) {
                 )
               ),
 
+# Physical Health ---------------------------------------------------------
+
+
               f7Shadow(
                 intensity = 5,
                 hover = TRUE,
@@ -128,6 +138,10 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('STPETERS')
                                      )),
 
+
+# Mental Health -----------------------------------------------------------
+
+
                     conditionalPanel("input.PMHselector == 'Mental Health (MH)'",
                                      f7Accordion(h4("Mental Health Resources"), multiCollapse = F,
                                                  mod_Accordion_ui('Mhcaps'),
@@ -138,6 +152,10 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('MHprideCenter'),
                                                  mod_Accordion_ui('MHsuicideFound')
                                      )),
+
+
+# Mental Health for Black Communities -------------------------------------
+
 
                     conditionalPanel("input.PMHselector == 'MH Resources (Black Communities)'",
                                      f7Accordion(h4("Mental Health Resources for Black Communities"), multiCollapse = F,
@@ -156,6 +174,9 @@ app_ui <- function(request) {
                                      )),
 
 
+# Mental Health for Hispanic Communities ----------------------------------
+
+
                     conditionalPanel("input.PMHselector == 'MH Resources (Hispanic Communities)'",
                                      f7Accordion(h4("Mental Health Resources for Hispanic Communities"), multiCollapse = F,
                                                  mod_Accordion_ui('CDLatinos'),
@@ -169,6 +190,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('MHLCpocagainstsuicide'),
                                                  mod_Accordion_ui('MHLCqtTherapistsofColor')
                                      )),
+
+# LGBTQ+ Resources --------------------------------------------------------
+
 
                     conditionalPanel("input.PMHselector == 'LGBTQ+ Resources'",
                                      f7Accordion(h4("LGBTQ+ Resources"), multiCollapse = F,
@@ -187,6 +211,9 @@ app_ui <- function(request) {
 
                                      )),
 
+# Sexual Health  ----------------------------------------------------------
+
+
 
                     conditionalPanel("input.PMHselector == 'Sexual Health'",
                                      f7Accordion(h4("Sexual Health"), multiCollapse = F,
@@ -199,6 +226,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('SH_WYH')
                                      )),
 
+# Sexual Violence ---------------------------------------------------------
+
+
 
                     conditionalPanel("input.PMHselector == 'Sexual Violence Related'",
                                      f7Accordion(h4("Sexual Violence Related"), multiCollapse = F,
@@ -208,6 +238,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('SV_RAINN'),
                                                  mod_Accordion_ui('SV_Svcenter')
                                      )),
+
+
+# AOD ---------------------------------------------------------------------
 
 
                     conditionalPanel("input.PMHselector == 'Alcohol and Other Drugs'",
@@ -227,6 +260,9 @@ app_ui <- function(request) {
                                      )),
 
 
+# Problem Gambling --------------------------------------------------------
+
+
                     conditionalPanel("input.PMHselector == 'Problem Gambling'",
                                      f7Accordion(h4("Problem Gambling"), multiCollapse = F,
                                                  mod_Accordion_ui('GAMB_NYSmainwebsite'),
@@ -235,8 +271,12 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('GAMB_NtnlHotline'),
                                                  mod_Accordion_ui('GAMB_gambAnonymous'),
                                                  mod_Accordion_ui('GAMB_gambAnon'),
-                                                 mod_Accordion_ui('GAMB_TxtLocator')
+                                                 mod_Accordion_ui('GAMB_TxtLocator'),
+                                                 mod_Accordion_ui('GAMB_Knowtheodds')
                                      )),
+
+# Academic Resources ------------------------------------------------------
+
 
                     conditionalPanel("input.PMHselector == 'Academic Resources'",
                                      f7Accordion(h4("Academic Resources"), multiCollapse = F,
@@ -250,6 +290,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('ACA_DOS')
                                      )),
 
+# Food, Housing, Financial ------------------------------------------------
+
+
                     conditionalPanel("input.PMHselector == 'Food, Housing, & Financial'",
                                      f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = F,
                                                  mod_Accordion_ui('FAO'),
@@ -258,11 +301,17 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('UAemergencyFund')
                                      )),
 
+# Legal -------------------------------------------------------------------
+
+
                     conditionalPanel("input.PMHselector == 'Legal Resources'",
                                      f7Accordion(h4("Legal Resources"), multiCollapse = F,
                                                  mod_Accordion_ui('LEGAL_SLS'),
                                                  mod_Accordion_ui('LEGAL_LegalAID')
                                      )),
+
+# Hotlines ----------------------------------------------------------------
+
 
                     conditionalPanel("input.PMHselector == 'Hotlines'",
                                      f7Accordion(h4("Hotlines"), multiCollapse = F,
@@ -284,6 +333,9 @@ app_ui <- function(request) {
             ),
 
 
+
+
+# Appointments Tab --------------------------------------------------------
 
 
           f7Tab(
@@ -317,6 +369,9 @@ app_ui <- function(request) {
                        F, tablet = FALSE))
           ),
 
+# Instagram Tab -----------------------------------------------------------
+
+
           f7Tab(tabName="Insta",
                 active = FALSE,
                 icon = f7Icon("logo_instagram"),
@@ -340,6 +395,11 @@ app_ui <- function(request) {
                            F, tablet = FALSE)
                 )
           )
+
+
+# Survey Incentives Tab ---------------------------------------------------
+
+
 #
 #           f7Tab(tabName="money",
 #                 active = FALSE,
