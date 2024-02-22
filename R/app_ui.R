@@ -281,6 +281,7 @@ app_ui <- function(request) {
                     conditionalPanel("input.PMHselector == 'Academic Resources'",
                                      f7Accordion(h4("Academic Resources"), multiCollapse = F,
                                                  mod_Accordion_ui('ACA_lib'),
+                                                 mod_Accordion_ui('ACA_CareerServices'),
                                                  mod_Accordion_ui('ACA_DAISS'),
                                                  mod_Accordion_ui('ACA_Writing'),
                                                  mod_Accordion_ui('ACA_Tutoring'),

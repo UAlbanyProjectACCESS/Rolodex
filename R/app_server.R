@@ -837,6 +837,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('ACA_SummerResearch', selector = selection, data = Acadata(), rownametitle = c('University at Albany Summer Research Program'), phone = T, website = T)
       mod_Accordion_server('ACA_DOS', selector=selection, data=Acadata(), title = c('Dean of Students'), Visible = T)
       mod_info_server('ACA_DOS', selector = selection, data = Acadata(), rownametitle = c('Dean of Students'), phone = T, website = T)
+      mod_Accordion_server('ACA_CareerServices', selector=selection, data=Acadata(), title = c('UAlbany Career Services'), Visible = T)
+      mod_info_server('ACA_CareerServices', selector = selection, data = Acadata(), rownametitle = c('UAlbany Career Services'), phone = T, website = T)
+
 
     }
 
