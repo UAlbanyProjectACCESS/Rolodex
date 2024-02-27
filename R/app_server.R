@@ -696,6 +696,32 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
 
 
+
+
+
+
+    # IPV Accordion -----------------------------------------------------------
+    if(input$PMHselector == "Interpartner Violence"){
+      selection<-input$PMHselector
+      IPVdata<-reactive({
+        data[data$Type == 'IPV',]
+      }) %>% bindCache(data[data$Type == 'IPV',])
+
+
+      mod_Accordion_server('IPV_Equinox', selector=selection, data=IPVdata(), title = c('Equinox'), Visible = T)
+      mod_info_server('IPV_Equinox', selector = selection, data = IPVdata(), rownametitle = c('Equinox'), phone = T, website = T)
+
+      mod_Accordion_server('IPV_Office of Health Promotion', selector=selection, data=IPVdata(), title = c('UAlbany Office of Health Promotion'), Visible = T)
+      mod_info_server('IPV_Office of Health Promotion', selector = selection, data = IPVdata(), rownametitle = c('UAlbany Office of Health Promotion'), phone = T, website = T)
+
+      mod_Accordion_server('IPV_Crime Victim and Sexual Violence Center', selector=selection, data=IPVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = T)
+      mod_info_server('IPV_Crime Victim and Sexual Violence Center', selector = selection, data = IPVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
+
+
+
+
+    }
+
     # AOD Accordion -----------------------------------------------------------
 
 
@@ -839,6 +865,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('ACA_DOS', selector = selection, data = Acadata(), rownametitle = c('Dean of Students'), phone = T, website = T)
       mod_Accordion_server('ACA_CareerServices', selector=selection, data=Acadata(), title = c('UAlbany Career Services'), Visible = T)
       mod_info_server('ACA_CareerServices', selector = selection, data = Acadata(), rownametitle = c('UAlbany Career Services'), phone = T, website = T)
+      mod_Accordion_server('Aca_International Student and Scholar Services', selector=selection, data=Acadata(), title = c('International Student and Scholar Services'), Visible = T)
+      mod_info_server('Aca_International Student and Scholar Services', selector = selection, data = Acadata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
 
 
     }
@@ -861,7 +889,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('PurpleThreads', selector = selection, data = FHFdata(), rownametitle = c('Purple Threads'), phone = T, website = T)
       mod_Accordion_server('UAemergencyFund', selector=selection, data=FHFdata(), title = c('UAlbany Student Emergency Fund'), Visible = T)
       mod_info_server('UAemergencyFund', selector = selection, data = FHFdata(), rownametitle = c('UAlbany Student Emergency Fund'), phone = T, website = T)
-
+      mod_Accordion_server('FHF_The Food Pantries Food Connect Map', selector=selection, data=FHFdata(), title = c('The Food Pantries Food Connect Map'), Visible = T)
+      mod_info_server('FHF_The Food Pantries Food Connect Map', selector = selection, data = FHFdata(), rownametitle = c('The Food Pantries Food Connect Map'), phone = F, website = T)
+      mod_Accordion_server('FHF_Capital Roots', selector=selection, data=FHFdata(), title = c('Capital Roots'), Visible = T)
+      mod_info_server('FHF_Capital Roots', selector = selection, data = FHFdata(), rownametitle = c('Capital Roots'), phone = T, website = T)
 
 
 

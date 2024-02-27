@@ -89,6 +89,7 @@ app_ui <- function(request) {
                                                                                                "MH Resources (Hispanic Communities)",
                                                                                                "LGBTQ+ Resources",
                                                                                                "Sexual Health",
+                                                                                               "Interpartner Violence",
                                                                                                "Sexual Violence Related",
                                                                                                "Alcohol and Other Drugs",
                                                                                                "Problem Gambling",
@@ -240,6 +241,19 @@ app_ui <- function(request) {
                                      )),
 
 
+
+
+# IPV ---------------------------------------------------------------------
+
+
+conditionalPanel("input.PMHselector == 'Interpartner Violence'",
+                 f7Accordion(h4("Interpartner Violence"), multiCollapse = F,
+                             mod_Accordion_ui('IPV_Equinox'),
+                             mod_Accordion_ui('IPV_Office of Health Promotion'),
+                             mod_Accordion_ui('IPV_Crime Victim and Sexual Violence Center')
+                 )),
+
+
 # AOD ---------------------------------------------------------------------
 
 
@@ -280,6 +294,7 @@ app_ui <- function(request) {
 
                     conditionalPanel("input.PMHselector == 'Academic Resources'",
                                      f7Accordion(h4("Academic Resources"), multiCollapse = F,
+                                                 mod_Accordion_ui('ACA_DOS'),
                                                  mod_Accordion_ui('ACA_lib'),
                                                  mod_Accordion_ui('ACA_CareerServices'),
                                                  mod_Accordion_ui('ACA_DAISS'),
@@ -288,7 +303,7 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('ACA_Excel'),
                                                  mod_Accordion_ui('ACA_CSTEP'),
                                                  mod_Accordion_ui('ACA_SummerResearch'),
-                                                 mod_Accordion_ui('ACA_DOS')
+                                                 mod_Accordion_ui('Aca_International Student and Scholar Services')
                                      )),
 
 # Food, Housing, Financial ------------------------------------------------
@@ -298,6 +313,8 @@ app_ui <- function(request) {
                                      f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = F,
                                                  mod_Accordion_ui('FAO'),
                                                  mod_Accordion_ui('PurplePantry'),
+                                                 mod_Accordion_ui('FHF_The Food Pantries Food Connect Map'),
+                                                 mod_Accordion_ui('FHF_Capital Roots'),
                                                  mod_Accordion_ui('PurpleThreads'),
                                                  mod_Accordion_ui('UAemergencyFund')
                                      )),
