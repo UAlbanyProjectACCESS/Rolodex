@@ -324,6 +324,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
                     conditionalPanel("input.PMHselector == 'Legal Resources'",
                                      f7Accordion(h4("Legal Resources"), multiCollapse = F,
+                                                 mod_Accordion_ui('Legal_UPD'),
                                                  mod_Accordion_ui('LEGAL_SLS'),
                                                  mod_Accordion_ui('LEGAL_LegalAID')
                                      )),

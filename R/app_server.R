@@ -914,7 +914,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       observeEvent(input$OffCampus,{
 
         if(input$OffCampus == F) {
-
+          mod_Accordion_server('Legal_UPD', selector=selection, data=Legaldata(), title = c('University Police (UPD)'), Visible = T)
+          mod_info_server('Legal_UPD', selector = selection, data = Legaldata(), rownametitle = c('University Police (UPD)'), phone = T, website = T)
           mod_Accordion_server('LEGAL_SLS', selector=selection, data=Legaldata(), title = c('Student Legal Services'), Visible = T)
           mod_info_server('LEGAL_SLS', selector = selection, data = Legaldata(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LEGAL_LegalAID', selector=selection, data=Legaldata(), title = c('Legal Aid Society NE New York'), Visible = F)
@@ -922,7 +923,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
 
         } else {
-
+          mod_Accordion_server('Legal_UPD', selector=selection, data=Legaldata(), title = c('University Police (UPD)'), Visible = T)
+          mod_info_server('Legal_UPD', selector = selection, data = Legaldata(), rownametitle = c('University Police (UPD)'), phone = T, website = T)
           mod_Accordion_server('LEGAL_SLS', selector=selection, data=Legaldata(), title = c('Student Legal Services'), Visible = T)
           mod_info_server('LEGAL_SLS', selector = selection, data = Legaldata(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LEGAL_LegalAID', selector=selection, data=Legaldata(), title = c('Legal Aid Society NE New York'), Visible = T)
@@ -932,6 +934,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         }
       })
     }
+
 
 
 
