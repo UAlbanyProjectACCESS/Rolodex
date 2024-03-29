@@ -141,18 +141,14 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
                   f7AccordionItem(title = "Save A Life Training", open=F,
                                   f7Block(br(),
-                                          f7Align(h3("Suicide Prevention - Save a Life Training"), side=c("center")),
+                                          f7Align(h3(strong("Suicide Prevention - Save a Life Training")), side=c("center")),
                                           hr(),
-                                          f7Align(h3(strong("What is the Suicide Prevention - Save A Life Training?")), side=c("center")),
-                                          f7Align(h4("The Suicide Prevention - Save A Life Training is a..."), side=c("center")),
-                                          f7Align(h3(strong("What's included in the training?")), side=c("center")),
-                                          f7Align(h4("The Suicide Prevention - Save A Life Training includes..."), side=c("center")),
-                                          f7Align(h3(strong("How long does it take to complete?")), side=c("center")),
-                                          f7Align(h4("Information about how long the training is."), side=c("center")),
+                                          f7Align(h4("This module addresses myths related to suicide, barriers to well-being, and factors that increase a person’s risk for suicide. Participants who complete this training will be able to identify warning signs, relevant resources, and steps they can take to support a person they are concerned about."), side=c("center")),
+                                          br(),
                                           hr(),
                                           f7Align(h3("Start the training now!"), side=c("center")),
-                                          hr(),
-                                          f7Align(div(f7Link("Suicide Prevention - Save A Life Training", href="https://albany.az1.qualtrics.com/jfe/form/SV_9ZwaUUgd9OobdSC")), side=c("center"))
+                                          f7Align(div(f7Link("Suicide Prevention - Save A Life Training", href="https://albany.az1.qualtrics.com/jfe/form/SV_9ZwaUUgd9OobdSC")), side=c("center")),
+                                          hr()
                                   )
                   )
 
