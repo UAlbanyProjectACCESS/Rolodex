@@ -135,9 +135,24 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
                                           f7Align(h5("Being involved in the Peer Advisory Board is a great item to include on your resume and is a rewarding way to get involved on campus!"), side=c("center")),
                                           hr(),
                                           f7Align(div(f7Link("Join Now!", href="https://forms.gle/dMeVgC7zLxvEpXRk9")), side=c("center"))
+                                  )
+                  ),
 
 
-
+                  f7AccordionItem(title = "Save A Life Training", open=F,
+                                  f7Block(br(),
+                                          f7Align(h3("Suicide Prevention - Save a Life Training"), side=c("center")),
+                                          hr(),
+                                          f7Align(h3(strong("What is the Suicide Prevention - Save A Life Training?")), side=c("center")),
+                                          f7Align(h4("The Suicide Prevention - Save A Life Training is a..."), side=c("center")),
+                                          f7Align(h3(strong("What's included in the training?")), side=c("center")),
+                                          f7Align(h4("The Suicide Prevention - Save A Life Training includes..."), side=c("center")),
+                                          f7Align(h3(strong("How long does it take to complete?")), side=c("center")),
+                                          f7Align(h4("Information about how long the training is."), side=c("center")),
+                                          hr(),
+                                          f7Align(h3("Start the training now!"), side=c("center")),
+                                          hr(),
+                                          f7Align(div(f7Link("Suicide Prevention - Save A Life Training", href="https://albany.az1.qualtrics.com/jfe/form/SV_9ZwaUUgd9OobdSC")), side=c("center"))
                                   )
                   )
 
