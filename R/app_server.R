@@ -802,7 +802,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
           mod_Accordion_server('AOD_CampusDrugPrevINDEX', selector=selection, data=AODdata(), title = c('Drug Index (CampusDrugPrevention.gov)'), Visible = T)
           mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
-
+          mod_Accordion_server('AOD_NYSQuitline', selector=selection, data=AODdata(), title = c('NYS Smokers Quit Line'), Visible = T)
+          mod_info_server('AOD_NYSQuitline', selector = selection, data = AODdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
 
         }
       })
@@ -974,8 +975,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('HL_NtnlGAMB', selector = selection, data = HLdata(), rownametitle = c('National Gambler Support Line'), phone = T, website = T)
       mod_Accordion_server('HL_SuicideLifeline', selector=selection, data=HLdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
       mod_info_server('HL_SuicideLifeline', selector = selection, data = HLdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
-
-
+      mod_Accordion_server('Hotline_NYSQuitline', selector=selection, data=HLdata(), title = c('NYS Smokers Quit Line'), Visible = T)
+      mod_info_server('Hotline_NYSQuitline', selector = selection, data = HLdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
 
 
     }
