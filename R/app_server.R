@@ -199,7 +199,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
                                             f7Align(h5("To learn more about heatlh and wellbeing"), side=c("center")),
                                             f7Align(h5("To connect to on- and off-campus resources"), side=c("center")),
                                             f7Align(h5("To explore options and overcome barriers"), side=c("center")),
-                                            f7Align(div(f7Link("Schedule a Navigator Appointment", href="https://calendly.com/d/g6j-syy-7z5")),side=c("center")),
+                                            f7Align(div(f7Link("Schedule a Navigator Appointment", href="https://qrco.de/NavAppts")),side=c("center")),
                                             br(),
                                             hr()
 
