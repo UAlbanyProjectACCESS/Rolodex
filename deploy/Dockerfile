@@ -1,9 +1,9 @@
 FROM rolodex_base
 COPY renv.lock.prod renv.lock
 RUN R -e 'renv::restore()'
-COPY inst /inst
-COPY srcjs /srcsj
-COPY www /www
+
+COPY srcjs /usr/local/lib/R/site-library/Rolodex/srcsj
+COPY www /usr/local/lib/R/site-library/Rolodex/www
 
 RUN R -e 'remotes::install_github("EwokOzwok/Rolodex")'
 
