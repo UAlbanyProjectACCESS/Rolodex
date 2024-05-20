@@ -485,6 +485,8 @@ golem_add_external_resources <- function() {
   # )
 
   tags$head(
+      tags$link(rel = 'manifest', href = "www/manifest.webmanifest"),
+      tags$script(src = "www/service-worker.js"),
     # includeHTML("google-analytics.html"),
     HTML("<script async src='https://www.googletagmanager.com/gtag/js?id=G-5XH47X1P8M'></script>
             <script>
