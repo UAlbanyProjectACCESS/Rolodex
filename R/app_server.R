@@ -349,6 +349,19 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_info_server('STPETERS',selector=selection, data=PMHdata(), rownametitle=c("St. Peter's Hospital"), phone=T, website=T)
 
 
+        # Running/Physical Health Stuff
+        mod_Accordion_server('FHF_BlackGirlsRun', selector=selection, data=PMHdata(), title = c('Black Girls Run'), Visible = F)
+        mod_info_server('FHF_BlackGirlsRun', selector = selection, data = PMHdata(), rownametitle = c('Black Girls Run'), phone = F, website = T)
+        mod_Accordion_server('FHF_CapCityRunners', selector=selection, data=PMHdata(), title = c('Cap City Runners'), Visible = F)
+        mod_info_server('FHF_CapCityRunners', selector = selection, data = PMHdata(), rownametitle = c('Cap City Runners'), phone = F, website = T)
+        mod_Accordion_server('FHF_PaceHappinessRunClub', selector=selection, data=PMHdata(), title = c('Pace and Happiness Run Club'), Visible = F)
+        mod_info_server('FHF_PaceHappinessRunClub', selector = selection, data = PMHdata(), rownametitle = c('Pace and Happiness Run Club'), phone = F, website = T)
+        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange '), Visible = F)
+        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange '), phone = F, website = T)
+        mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = F)
+        mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
+
+
 
       } else {
         mod_Accordion_server('SHS', selector=selection, data=PMHdata(), title=c("Student Health Services"),Visible = T)
@@ -372,6 +385,19 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_info_server('UrgentC',selector=selection, data=PMHdata(), rownametitle=c("EmUrgentCare at Colonie"), phone=T, website=T)
         mod_info_server('SAMARITAN',selector=selection, data=PMHdata(), rownametitle=c("Samaritan Hospital - Albany Memorial Campus"), phone=T, website=T)
         mod_info_server('STPETERS',selector=selection, data=PMHdata(), rownametitle=c("St. Peter's Hospital"), phone=T, website=T)
+
+
+        # Running/Physical Health Stuff
+        mod_Accordion_server('FHF_BlackGirlsRun', selector=selection, data=PMHdata(), title = c('Black Girls Run'), Visible = T)
+        mod_info_server('FHF_BlackGirlsRun', selector = selection, data = PMHdata(), rownametitle = c('Black Girls Run'), phone = F, website = T)
+        mod_Accordion_server('FHF_CapCityRunners', selector=selection, data=PMHdata(), title = c('Cap City Runners'), Visible = T)
+        mod_info_server('FHF_CapCityRunners', selector = selection, data = PMHdata(), rownametitle = c('Cap City Runners'), phone = F, website = T)
+        mod_Accordion_server('FHF_PaceHappinessRunClub', selector=selection, data=PMHdata(), title = c('Pace and Happiness Run Club'), Visible = T)
+        mod_info_server('FHF_PaceHappinessRunClub', selector = selection, data = PMHdata(), rownametitle = c('Pace and Happiness Run Club'), phone = F, website = T)
+        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange '), Visible = T)
+        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange '), phone = F, website = T)
+        mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = T)
+        mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
 
 
       }
@@ -717,19 +743,32 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       IPVdata<-reactive({
         data[data$Type == 'IPV',]
       }) %>% bindCache(data[data$Type == 'IPV',])
+      observeEvent(input$OffCampus,{
 
+        if(input$OffCampus == F) {
 
-      mod_Accordion_server('IPV_Equinox', selector=selection, data=IPVdata(), title = c('Equinox'), Visible = T)
-      mod_info_server('IPV_Equinox', selector = selection, data = IPVdata(), rownametitle = c('Equinox'), phone = T, website = T)
+          mod_Accordion_server('IPV_Office of Health Promotion', selector=selection, data=IPVdata(), title = c('UAlbany Office of Health Promotion'), Visible = T)
+          mod_info_server('IPV_Office of Health Promotion', selector = selection, data = IPVdata(), rownametitle = c('UAlbany Office of Health Promotion'), phone = T, website = T)
 
-      mod_Accordion_server('IPV_Office of Health Promotion', selector=selection, data=IPVdata(), title = c('UAlbany Office of Health Promotion'), Visible = T)
-      mod_info_server('IPV_Office of Health Promotion', selector = selection, data = IPVdata(), rownametitle = c('UAlbany Office of Health Promotion'), phone = T, website = T)
+          mod_Accordion_server('IPV_Equinox', selector=selection, data=IPVdata(), title = c('Equinox'), Visible = F)
+          mod_info_server('IPV_Equinox', selector = selection, data = IPVdata(), rownametitle = c('Equinox'), phone = T, website = F)
 
-      mod_Accordion_server('IPV_Crime Victim and Sexual Violence Center', selector=selection, data=IPVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = T)
-      mod_info_server('IPV_Crime Victim and Sexual Violence Center', selector = selection, data = IPVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
+          mod_Accordion_server('IPV_Crime Victim and Sexual Violence Center', selector=selection, data=IPVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = F)
+          mod_info_server('IPV_Crime Victim and Sexual Violence Center', selector = selection, data = IPVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
 
+        } else {
 
+          mod_Accordion_server('IPV_Office of Health Promotion', selector=selection, data=IPVdata(), title = c('UAlbany Office of Health Promotion'), Visible = T)
+          mod_info_server('IPV_Office of Health Promotion', selector = selection, data = IPVdata(), rownametitle = c('UAlbany Office of Health Promotion'), phone = T, website = T)
 
+          mod_Accordion_server('IPV_Equinox', selector=selection, data=IPVdata(), title = c('Equinox'), Visible = T)
+          mod_info_server('IPV_Equinox', selector = selection, data = IPVdata(), rownametitle = c('Equinox'), phone = T, website = T)
+
+          mod_Accordion_server('IPV_Crime Victim and Sexual Violence Center', selector=selection, data=IPVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = T)
+          mod_info_server('IPV_Crime Victim and Sexual Violence Center', selector = selection, data = IPVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
+
+          }
+      })
 
     }
 
@@ -907,6 +946,15 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('FHF_Capital Roots', selector = selection, data = FHFdata(), rownametitle = c('Capital Roots'), phone = T, website = T)
 
 
+      mod_Accordion_server('FHF_VincdepaulFoodPantry', selector=selection, data=FHFdata(), title = c('St. Vincent De Paul Food Pantry'), Visible = T)
+      mod_info_server('FHF_VincdepaulFoodPantry', selector = selection, data = FHFdata(), rownametitle = c('St. Vincent De Paul Food Pantry.'), phone = T, website = T)
+
+      mod_Accordion_server('FHF_CapRegionCommResource', selector=selection, data=FHFdata(), title = c('Capital Region Community Resource'), Visible = T)
+      mod_info_server('FHF_CapRegionCommResource', selector = selection, data = FHFdata(), rownametitle = c('Capital Region Community Resource'), phone = T, website = T)
+
+
+      mod_Accordion_server('FHF_WERC', selector=selection, data=FHFdata(), title = c('Women’s Employment & Resource Center (WERC)'), Visible = T)
+      mod_info_server('FHF_WERC', selector = selection, data = FHFdata(), rownametitle = c('Women’s Employment & Resource Center (WERC)'), phone = T, website = T)
 
 
     }

@@ -136,7 +136,11 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('AMCwash'),
                                                  mod_Accordion_ui('UrgentC'),
                                                  mod_Accordion_ui('SAMARITAN'),
-                                                 mod_Accordion_ui('STPETERS')
+                                                 mod_Accordion_ui('STPETERS'),
+                                                 mod_Accordion_ui('FHF_BlackGirlsRun'),
+                                                 mod_Accordion_ui('FHF_CapCityRunners'),
+                                                 mod_Accordion_ui('FHF_PaceHappinessRunClub'),
+                                                 mod_Accordion_ui('FHF_AlbRunExchange')
                                      )),
 
 
@@ -317,7 +321,12 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('FHF_The Food Pantries Food Connect Map'),
                                                  mod_Accordion_ui('FHF_Capital Roots'),
                                                  mod_Accordion_ui('PurpleThreads'),
-                                                 mod_Accordion_ui('UAemergencyFund')
+                                                 mod_Accordion_ui('UAemergencyFund'),
+                                                 mod_Accordion_ui('FHF_CapCityRescue'),
+                                                 mod_Accordion_ui('FHF_VincdepaulFoodPantry'),
+                                                 mod_Accordion_ui('FHF_CapRegionCommResource'),
+                                                 mod_Accordion_ui('FHF_WERC')
+
                                      )),
 
 # Legal -------------------------------------------------------------------
