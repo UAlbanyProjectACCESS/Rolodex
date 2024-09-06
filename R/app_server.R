@@ -433,6 +433,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('Mhpsychtoday',selector=selection, data=MHdata(), rownametitle=c("Find a Therapist (Psych Today)"), phone=F, website=T)
           mod_Accordion_server('MH_SuicideLifeline', selector=selection, data=MHdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = F)
           mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+          mod_Accordion_server('MH_CHAMP', selector=selection, data=MHdata(), title = c('CHAMP Program (OASAS)'), Visible = F)
+          mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
+          mod_Accordion_ui('MH_CHAMP')
+
 
 
         } else {
@@ -452,6 +456,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('Mhpsychtoday',selector=selection, data=MHdata(), rownametitle=c("Find a Therapist (Psych Today)"), phone=F, website=T)
           mod_Accordion_server('MH_SuicideLifeline', selector=selection, data=MHdata(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
           mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+          mod_Accordion_server('MH_CHAMP', selector=selection, data=MHdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
+          mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
 
         }
       })
@@ -494,6 +500,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('TherapyBlackMen', selector = selection, data = MHBC(), rownametitle = c('Therapy for Black Men'), phone = F, website = T)
       mod_Accordion_server('MHBC_SuicideLifeline', selector=selection, data=MHBC(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
       mod_info_server('MHBC_SuicideLifeline', selector = selection, data = MHBC(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+      mod_Accordion_server('MHBC_CHAMP', selector=selection, data=MHBC(), title = c('CHAMP Program (OASAS)'), Visible = T)
+      mod_info_server('MHBC_CHAMP', selector = selection, data = MHBC(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
+
+
 
 }
 
@@ -546,6 +556,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('MHLCqtTherapistsofColor', selector = selection, data = MHLC(), rownametitle = c('National Queer & Trans Therapists of Color Network'), phone = F, website = T)
       mod_Accordion_server('MHLC_SuicideLifeline', selector=selection, data=MHLC(), title = c('(988) National Suicide & Crisis Lifeline'), Visible = T)
       mod_info_server('MHLC_SuicideLifeline', selector = selection, data = MHLC(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
+      mod_Accordion_server('MHLC_CHAMP', selector=selection, data=MHLC(), title = c('CHAMP Program (OASAS)'), Visible = T)
+      mod_info_server('MHLC_CHAMP', selector = selection, data = MHLC(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
 
 
     }
@@ -808,6 +820,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_Aameetings', selector = selection, data = AODdata(), rownametitle = c('AA Meetings'), phone = F, website = T)
           mod_Accordion_server('AOD_CampusDrugPrevINDEX', selector=selection, data=AODdata(), title = c('Drug Index (CampusDrugPrevention.gov)'), Visible = F)
           mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
+          mod_Accordion_server('AOD_CHAMP', selector=selection, data=AODdata(), title = c('CHAMP Program (OASAS)'), Visible = F)
+          mod_info_server('AOD_CHAMP', selector = selection, data = AODdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
+          mod_Accordion_ui('AOD_CHAMP')
 
 
 
@@ -843,6 +858,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
           mod_Accordion_server('AOD_NYSQuitline', selector=selection, data=AODdata(), title = c('NYS Smokers Quit Line'), Visible = T)
           mod_info_server('AOD_NYSQuitline', selector = selection, data = AODdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
+          mod_Accordion_server('AOD_CHAMP', selector=selection, data=AODdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
+          mod_info_server('AOD_CHAMP', selector = selection, data = AODdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
+
 
         }
       })
@@ -1025,6 +1043,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('HL_SuicideLifeline', selector = selection, data = HLdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
       mod_Accordion_server('Hotline_NYSQuitline', selector=selection, data=HLdata(), title = c('NYS Smokers Quit Line'), Visible = T)
       mod_info_server('Hotline_NYSQuitline', selector = selection, data = HLdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
+      mod_Accordion_server('HL_CHAMP', selector=selection, data=HLdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
+      mod_info_server('HL_CHAMP', selector = selection, data = HLdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
 
 
     }
