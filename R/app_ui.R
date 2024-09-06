@@ -126,7 +126,7 @@ app_ui <- function(request) {
                 f7Card(
                   f7Block(
                     conditionalPanel("input.PMHselector == 'Physical Health'",
-                                     f7Accordion(h4("Physical Health Resources"), multiCollapse = F,
+                                     f7Accordion(h4("Physical Health Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('SHS'),
                                                  mod_Accordion_ui('SCS'),
                                                  mod_Accordion_ui('SHAPE'),
@@ -148,7 +148,7 @@ app_ui <- function(request) {
 
 
                     conditionalPanel("input.PMHselector == 'Mental Health (MH)'",
-                                     f7Accordion(h4("Mental Health Resources"), multiCollapse = F,
+                                     f7Accordion(h4("Mental Health Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('Mhcaps'),
                                                  mod_Accordion_ui('Mhmiddleearth'),
                                                  mod_Accordion_ui('MH_SuicideLifeline'),
@@ -164,7 +164,7 @@ app_ui <- function(request) {
 
 
                     conditionalPanel("input.PMHselector == 'MH Resources (Black Communities)'",
-                                     f7Accordion(h4("Mental Health Resources for Black Communities"), multiCollapse = F,
+                                     f7Accordion(h4("Mental Health Resources for Black Communities"), multiCollapse = T,
                                                  mod_Accordion_ui('MHBC_CHAMP'),
                                                  mod_Accordion_ui('akkoma'),
                                                  mod_Accordion_ui('MHBC_SuicideLifeline'),
@@ -185,7 +185,7 @@ app_ui <- function(request) {
 
 
                     conditionalPanel("input.PMHselector == 'MH Resources (Hispanic Communities)'",
-                                     f7Accordion(h4("Mental Health Resources for Hispanic Communities"), multiCollapse = F,
+                                     f7Accordion(h4("Mental Health Resources for Hispanic Communities"), multiCollapse = T,
                                                  mod_Accordion_ui('MHLC_CHAMP'),
                                                  mod_Accordion_ui('CDLatinos'),
                                                  mod_Accordion_ui('MHLC_SuicideLifeline'),
@@ -224,7 +224,7 @@ app_ui <- function(request) {
 
 
                     conditionalPanel("input.PMHselector == 'Sexual Health'",
-                                     f7Accordion(h4("Sexual Health"), multiCollapse = F,
+                                     f7Accordion(h4("Sexual Health"), multiCollapse = T,
                                                  mod_Accordion_ui('SH_SHS'),
                                                  mod_Accordion_ui('SH_AMC'),
                                                  mod_Accordion_ui('SH_APH'),
@@ -239,7 +239,7 @@ app_ui <- function(request) {
 
 
                     conditionalPanel("input.PMHselector == 'Sexual Violence Related'",
-                                     f7Accordion(h4("Sexual Violence Related"), multiCollapse = F,
+                                     f7Accordion(h4("Sexual Violence Related"), multiCollapse = T,
                                                  mod_Accordion_ui('SV_SLS'),
                                                  mod_Accordion_ui('SV_SVsupportAdvocacy'),
                                                  mod_Accordion_ui('SV_24hrSexualAssaultHotline'),
@@ -254,7 +254,7 @@ app_ui <- function(request) {
 
 
 conditionalPanel("input.PMHselector == 'Interpartner Violence'",
-                 f7Accordion(h4("Interpartner Violence"), multiCollapse = F,
+                 f7Accordion(h4("Interpartner Violence"), multiCollapse = T,
                              mod_Accordion_ui('IPV_Equinox'),
                              mod_Accordion_ui('IPV_Office of Health Promotion'),
                              mod_Accordion_ui('IPV_Crime Victim and Sexual Violence Center')
@@ -265,7 +265,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Alcohol and Other Drugs'",
-                                     f7Accordion(h4("Alcohol and Other Drugs"), multiCollapse = F,
+                                     f7Accordion(h4("Alcohol and Other Drugs"), multiCollapse = T,
                                                  mod_Accordion_ui('AOD_OHP'),
                                                  mod_Accordion_ui('AOD_CHAMP'),
                                                  mod_Accordion_ui('AOD_NYSQuitline'),
@@ -287,7 +287,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Problem Gambling'",
-                                     f7Accordion(h4("Problem Gambling"), multiCollapse = F,
+                                     f7Accordion(h4("Problem Gambling"), multiCollapse = T,
                                                  mod_Accordion_ui('GAMB_NYSmainwebsite'),
                                                  mod_Accordion_ui('GAMB_Escreener'),
                                                  mod_Accordion_ui('GAMB_NYShotline'),
@@ -302,7 +302,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Academic Resources'",
-                                     f7Accordion(h4("Academic Resources"), multiCollapse = F,
+                                     f7Accordion(h4("Academic Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('ACA_DOS'),
                                                  mod_Accordion_ui('ACA_lib'),
                                                  mod_Accordion_ui('ACA_CareerServices'),
@@ -319,7 +319,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Food, Housing, & Financial'",
-                                     f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = F,
+                                     f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = T,
                                                  mod_Accordion_ui('FAO'),
                                                  mod_Accordion_ui('PurplePantry'),
                                                  mod_Accordion_ui('FHF_The Food Pantries Food Connect Map'),
@@ -337,7 +337,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Legal Resources'",
-                                     f7Accordion(h4("Legal Resources"), multiCollapse = F,
+                                     f7Accordion(h4("Legal Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('Legal_UPD'),
                                                  mod_Accordion_ui('LEGAL_SLS'),
                                                  mod_Accordion_ui('LEGAL_LegalAID')
@@ -347,7 +347,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
 
                     conditionalPanel("input.PMHselector == 'Hotlines'",
-                                     f7Accordion(h4("Hotlines"), multiCollapse = F,
+                                     f7Accordion(h4("Hotlines"), multiCollapse = T,
                                                  mod_Accordion_ui('HL_FindAHelpline'),
                                                  mod_Accordion_ui('HL_SuicideLifeline'),
                                                  mod_Accordion_ui('Hotline_NYSQuitline'),
