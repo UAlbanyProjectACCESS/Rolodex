@@ -356,8 +356,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_info_server('FHF_CapCityRunners', selector = selection, data = PMHdata(), rownametitle = c('Cap City Runners'), phone = F, website = T)
         mod_Accordion_server('FHF_PaceHappinessRunClub', selector=selection, data=PMHdata(), title = c('Pace and Happiness Run Club'), Visible = F)
         mod_info_server('FHF_PaceHappinessRunClub', selector = selection, data = PMHdata(), rownametitle = c('Pace and Happiness Run Club'), phone = F, website = T)
-        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange '), Visible = F)
-        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange '), phone = F, website = T)
+        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange'), Visible = F)
+        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange'), phone = F, website = T)
         mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = F)
         mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
 
@@ -394,8 +394,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_info_server('FHF_CapCityRunners', selector = selection, data = PMHdata(), rownametitle = c('Cap City Runners'), phone = F, website = T)
         mod_Accordion_server('FHF_PaceHappinessRunClub', selector=selection, data=PMHdata(), title = c('Pace and Happiness Run Club'), Visible = T)
         mod_info_server('FHF_PaceHappinessRunClub', selector = selection, data = PMHdata(), rownametitle = c('Pace and Happiness Run Club'), phone = F, website = T)
-        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange '), Visible = T)
-        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange '), phone = F, website = T)
+        mod_Accordion_server('FHF_AlbRunExchange', selector=selection, data=PMHdata(), title = c('Albany Running Exchange'), Visible = T)
+        mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange'), phone = F, website = T)
         mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = T)
         mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
 
