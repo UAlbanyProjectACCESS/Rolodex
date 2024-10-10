@@ -957,6 +957,14 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_Accordion_server('PurpleThreads', selector=selection, data=FHFdata(), title = c('Purple Threads'), Visible = T)
       mod_info_server('PurpleThreads', selector = selection, data = FHFdata(), rownametitle = c('Purple Threads'), phone = T, website = T)
       mod_Accordion_server('UAemergencyFund', selector=selection, data=FHFdata(), title = c('UAlbany Student Emergency Fund'), Visible = T)
+      mod_Accordion_server('FHF_SSS', selector=selection, data=FHFdata(), title = c('Supplemental Support Services'), Visible = T)
+      mod_info_server('FHF_SSS', selector = selection, data = FHFdata(), rownametitle = c('Supplemental Support Services'), phone = F, website = T)
+      mod_Accordion_server('FHF_HomelessnessLiason', selector=selection, data=FHFdata(), title = c('UAlbany Homelessness Liason'), Visible = T)
+      mod_info_server('FHF_HomelessnessLiason', selector = selection, data = FHFdata(), rownametitle = c('UAlbany Homelessness Liason'), phone = T, website = T)
+      mod_Accordion_server('FHF_OffCampusSNAP', selector=selection, data=FHFdata(), title = c('Off-campus Food Assistance'), Visible = T)
+      mod_info_server('FHF_OffCampusSNAP', selector = selection, data = FHFdata(), rownametitle = c('Off-campus Food Assistance'), phone = F, website = T)
+
+
       mod_info_server('UAemergencyFund', selector = selection, data = FHFdata(), rownametitle = c('UAlbany Student Emergency Fund'), phone = T, website = T)
       mod_Accordion_server('FHF_The Food Pantries Food Connect Map', selector=selection, data=FHFdata(), title = c('The Food Pantries Food Connect Map'), Visible = T)
       mod_info_server('FHF_The Food Pantries Food Connect Map', selector = selection, data = FHFdata(), rownametitle = c('The Food Pantries Food Connect Map'), phone = F, website = T)
