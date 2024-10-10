@@ -972,8 +972,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('FHF_Capital Roots', selector = selection, data = FHFdata(), rownametitle = c('Capital Roots'), phone = T, website = T)
 
 
-      mod_Accordion_server('FHF_VincdepaulFoodPantry', selector=selection, data=FHFdata(), title = c('St. Vincent De Paul Food Pantry'), Visible = T)
-      mod_info_server('FHF_VincdepaulFoodPantry', selector = selection, data = FHFdata(), rownametitle = c('St. Vincent De Paul Food Pantry.'), phone = T, website = T)
+      mod_Accordion_server('FHF_VincdepaulFoodPantry', selector=selection, data=FHFdata(), title = c('St Vincent De Paul Food Pantry'), Visible = T)
+      mod_info_server('FHF_VincdepaulFoodPantry', selector = selection, data = FHFdata(), rownametitle = c('St Vincent De Paul Food Pantry'), phone = T, website = T)
 
       mod_Accordion_server('FHF_CapRegionCommResource', selector=selection, data=FHFdata(), title = c('Capital Region Community Resource'), Visible = T)
       mod_info_server('FHF_CapRegionCommResource', selector = selection, data = FHFdata(), rownametitle = c('Capital Region Community Resource'), phone = T, website = T)
