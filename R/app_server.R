@@ -72,7 +72,7 @@ app_server <- function(input, output, session) {
   })
 
 
-
+# NEW WELCOME & VIDEO BLOCK
   output$welcome <- renderUI({
     tagList(
       f7Accordion(id=NULL, multiCollapse = F,
@@ -88,35 +88,24 @@ app_server <- function(input, output, session) {
                                   )
                   ),
 
-                  f7AccordionItem(title = "HIV/STI Info", open=F,
-                                  f7Block(br(),
-                                          f7Align(h3("Check out the video below for up-to-date information about HIV and other STIs common on college campuses"), side=c("center")),
-                                          hr(),
-                                          br(),
-                                          HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/PyGk5kYbU-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
-                                          br(),
-                                          hr()
-                                  )
-                  ),
-
 
                   f7AccordionItem(title = "Project Leaders", open=F,
                                   f7Block(f7Align(h2("M. Dolores Cimini, PhD"), side=c("center")),
-                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-04/EDU_CiminiMDolores_2021.JPG?h=fdd95cf8&itok=bGHgRgGr" width=60%></center>'),
-                                  h5("Dr. M. Dolores Cimini is a New York State licensed psychologist and Director of the Center for Behavioral Health Promotion and Applied Research and Senior Research Scientist in the Department of Educational and Counseling Psychology. She is the former Director of the nationally recognized Middle Earth Peer Assistance Program.
+                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-04/EDU_CiminiMDolores_2021.JPG?h=fdd95cf8&itok=bGHgRgGr" width=60%></center>'),
+                                          h5("Dr. M. Dolores Cimini is a New York State licensed psychologist and Director of the Center for Behavioral Health Promotion and Applied Research and Senior Research Scientist in the Department of Educational and Counseling Psychology. She is the former Director of the nationally recognized Middle Earth Peer Assistance Program.
                                 Dr. Cimini has led comprehensive efforts in research-to-practice translation at the University at Albany since 1990 with over $10 million in support from the National Institute on Alcohol Abuse and Alcoholism (NIAAA), National Institute on Drug Abuse (NIDA), Substance Abuse and Mental Health Services Administration (SAMHSA), U.S. Department of Education, U.S. Department of Justice’s Office on Violence Against Women, and New York State Office of Addiction Services and Supports."),
-                                  hr(),
-                                  f7Align(h2("Jessica L. Martin, PhD"), side=c("center")),
-                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-10/Martin.jpg?h=8c719d1f&itok=DZ_UoVte" width=60%></center>'),
-                                  h5("Jessica L. Martin is a licensed psychologist, a Research Fellow for the School of Education at the University at Albany, SUNY, and a Senior Research Associate for the Research Foundation for SUNY. She was a tenured faculty member in Counseling Psychology at the University at Albany for 11 years before transitioning to research roles and clinical work in private practice.
+                                          hr(),
+                                          f7Align(h2("Jessica L. Martin, PhD"), side=c("center")),
+                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-10/Martin.jpg?h=8c719d1f&itok=DZ_UoVte" width=60%></center>'),
+                                          h5("Jessica L. Martin is a licensed psychologist, a Research Fellow for the School of Education at the University at Albany, SUNY, and a Senior Research Associate for the Research Foundation for SUNY. She was a tenured faculty member in Counseling Psychology at the University at Albany for 11 years before transitioning to research roles and clinical work in private practice.
 
 Dr. Martin’s research expertise is in substance use and other health-risk behaviors among young adults and college students. Specifically, she investigates individual, psychosocial, cultural, and contextual risk and protective factors for substance use and co-occurring disorders and health-risk behaviors (e.g., disordered eating, risky sexual behavior) and health disparities as they relate to substance use."),
-                                  hr(),
+                                          hr(),
 
-                                  f7Align(h2("Laura L. Longo, PhD"), side=c("center")),
-                                  HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2023-02/Laura%20Longo.png?h=c4434bf3&itok=ookWO5g4" width=60%></center>'),
-                                  h5("Laura M. Longo is a licensed psychologist, and a Senior Research Specialist for the Research Foundation for SUNY. Outside of the Center for Behavioral Health Promotion and Applied Research, Dr. Longo works in a private practice providing psychotherapy and evaluation services. Dr. Longo’s expertise is in the development, implementation, and evaluation of health communication campaigns, and prevention and early intervention services that address substance misuse and suicide prevention. Dr. Longo is passionate about understanding individual, sociocultural, and systemic factors that impact substance use, other areas of mental health, and recovery. Dr. Longo is a recovery ally and an avid social justice advocate."),
-                                  hr()
+                                          f7Align(h2("Laura L. Longo, PhD"), side=c("center")),
+                                          HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2023-02/Laura%20Longo.png?h=c4434bf3&itok=ookWO5g4" width=60%></center>'),
+                                          h5("Laura M. Longo is a licensed psychologist, and a Senior Research Specialist for the Research Foundation for SUNY. Outside of the Center for Behavioral Health Promotion and Applied Research, Dr. Longo works in a private practice providing psychotherapy and evaluation services. Dr. Longo’s expertise is in the development, implementation, and evaluation of health communication campaigns, and prevention and early intervention services that address substance misuse and suicide prevention. Dr. Longo is passionate about understanding individual, sociocultural, and systemic factors that impact substance use, other areas of mental health, and recovery. Dr. Longo is a recovery ally and an avid social justice advocate."),
+                                          hr()
                                   )
                   ),
 
@@ -155,6 +144,120 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       )
     )
   })
+
+  output$videos <- renderUI({
+    tagList(
+      f7Accordion(id=NULL, multiCollapse = F,
+                  f7AccordionItem(title = "HIV/STI Info", open=F,
+                                  f7Block(br(),
+                                          f7Align(h3("Check out the video below for up-to-date information about HIV and other STIs common on college campuses"), side=c("center")),
+                                          hr(),
+                                          br(),
+                                          HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/PyGk5kYbU-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+                                          br(),
+                                          hr()
+                                  )
+                  ),
+
+
+                  f7AccordionItem(title = "Fentanyl and Xylazine Info", open=F,
+                                  f7Block(br(),
+                                          f7Align(h3("Check out the video below for up-to-date information about Fentanyl and Xylazine"), side=c("center")),
+                                          hr(),
+                                          br(),
+                                          HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/4skME5hVoig?si=zmn2UMQVUwkxX28v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+                                          br(),
+                                          hr()
+                                  )
+                  )
+      )
+    )
+  })
+
+
+# OLD WELCOME
+#   output$welcome <- renderUI({
+#     tagList(
+#       f7Accordion(id=NULL, multiCollapse = F,
+#                   f7AccordionItem(title = "About Us", open=F,
+#                                   f7Block(h3("Project ACCESS is an innovative translational research initiative at UAlbany funded by a grant from the federal government and our mission is to help you find and decide on what kind of resources and services might help you."),
+#                                           hr(),
+#                                           h4("We offer appointments with peer-navigators to explore free on- and off-campus resources,
+#                                             education events that help you thrive as a student and in life, and connections to confidential and anonymous on-campus STI testing provided by our community partners"),
+#                                           HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/mbkk2nPw8gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+#                                           f7Align(div(f7Link(h3("Learn more about Project ACCESS"), href="https://www.albany.edu/education/research/behavioral-health-promotion#tab-project-access")),side=c("center")),
+#                                           f7Align(h6("DEVELOPED IN PART UNDER GRANT NUMBER 1H79SP082142-01 FROM THE SUBSTANCE ABUSE AND MENTAL HEALTH SERVICES ADMINISTRATION (SAMHSA) U.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES (HHS)."), side=c("center")),
+#                                           hr()
+#                                   )
+#                   ),
+#
+#                   f7AccordionItem(title = "HIV/STI Info", open=F,
+#                                   f7Block(br(),
+#                                           f7Align(h3("Check out the video below for up-to-date information about HIV and other STIs common on college campuses"), side=c("center")),
+#                                           hr(),
+#                                           br(),
+#                                           HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/PyGk5kYbU-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+#                                           br(),
+#                                           hr()
+#                                   )
+#                   ),
+#
+#
+#                   f7AccordionItem(title = "Project Leaders", open=F,
+#                                   f7Block(f7Align(h2("M. Dolores Cimini, PhD"), side=c("center")),
+#                                   HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-04/EDU_CiminiMDolores_2021.JPG?h=fdd95cf8&itok=bGHgRgGr" width=60%></center>'),
+#                                   h5("Dr. M. Dolores Cimini is a New York State licensed psychologist and Director of the Center for Behavioral Health Promotion and Applied Research and Senior Research Scientist in the Department of Educational and Counseling Psychology. She is the former Director of the nationally recognized Middle Earth Peer Assistance Program.
+#                                 Dr. Cimini has led comprehensive efforts in research-to-practice translation at the University at Albany since 1990 with over $10 million in support from the National Institute on Alcohol Abuse and Alcoholism (NIAAA), National Institute on Drug Abuse (NIDA), Substance Abuse and Mental Health Services Administration (SAMHSA), U.S. Department of Education, U.S. Department of Justice’s Office on Violence Against Women, and New York State Office of Addiction Services and Supports."),
+#                                   hr(),
+#                                   f7Align(h2("Jessica L. Martin, PhD"), side=c("center")),
+#                                   HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2022-10/Martin.jpg?h=8c719d1f&itok=DZ_UoVte" width=60%></center>'),
+#                                   h5("Jessica L. Martin is a licensed psychologist, a Research Fellow for the School of Education at the University at Albany, SUNY, and a Senior Research Associate for the Research Foundation for SUNY. She was a tenured faculty member in Counseling Psychology at the University at Albany for 11 years before transitioning to research roles and clinical work in private practice.
+#
+# Dr. Martin’s research expertise is in substance use and other health-risk behaviors among young adults and college students. Specifically, she investigates individual, psychosocial, cultural, and contextual risk and protective factors for substance use and co-occurring disorders and health-risk behaviors (e.g., disordered eating, risky sexual behavior) and health disparities as they relate to substance use."),
+#                                   hr(),
+#
+#                                   f7Align(h2("Laura L. Longo, PhD"), side=c("center")),
+#                                   HTML('<center><img src="https://www.albany.edu/sites/default/files/styles/person_page_thumbnail/public/2023-02/Laura%20Longo.png?h=c4434bf3&itok=ookWO5g4" width=60%></center>'),
+#                                   h5("Laura M. Longo is a licensed psychologist, and a Senior Research Specialist for the Research Foundation for SUNY. Outside of the Center for Behavioral Health Promotion and Applied Research, Dr. Longo works in a private practice providing psychotherapy and evaluation services. Dr. Longo’s expertise is in the development, implementation, and evaluation of health communication campaigns, and prevention and early intervention services that address substance misuse and suicide prevention. Dr. Longo is passionate about understanding individual, sociocultural, and systemic factors that impact substance use, other areas of mental health, and recovery. Dr. Longo is a recovery ally and an avid social justice advocate."),
+#                                   hr()
+#                                   )
+#                   ),
+#
+#
+#                   f7AccordionItem(title = "Join Project ACCESS", open=F,
+#                                   f7Block(br(),
+#                                           f7Align(h2("We're looking for student all stars with lived experience to join our Peer Advisory Board!"), side=c("left")),
+#                                           hr(),
+#                                           f7Align(h4(strong("What is the Peer Advisory Board?")), side=c("center")),
+#                                           f7Align(h5("The Peer Advisory Board is a group of undergraduate UAlbany students who attend meetings with members of the Project ACCESS team."), side=c("center")),
+#                                           f7Align(h4(strong("When are the meetings?")), side=c("center")),
+#                                           f7Align(h5("There are two meetings a month, and meetings last about one hour."), side=c("center")),
+#                                           f7Align(h4(strong("What are the meetings like?")), side=c("center")),
+#                                           f7Align(h5("In these meetings, we ask for your feedback about our work (e.g., merchandise design, tabling events, workshops, etc.) and offer opportunities to participate in our work."), side=c("center")),
+#                                           hr(),
+#                                           f7Align(h5("Being involved in the Peer Advisory Board is a great item to include on your resume and is a rewarding way to get involved on campus!"), side=c("center")),
+#                                           hr(),
+#                                           f7Align(div(f7Link("Join Now!", href="https://forms.gle/dMeVgC7zLxvEpXRk9")), side=c("center"))
+#                                   )
+#                   ),
+#
+#
+#                   f7AccordionItem(title = "Save A Life Training", open=F,
+#                                   f7Block(br(),
+#                                           f7Align(h3(strong("Suicide Prevention - Save a Life Training")), side=c("center")),
+#                                           hr(),
+#                                           f7Align(h4("This module addresses myths related to suicide, barriers to well-being, and factors that increase a person’s risk for suicide. Participants who complete this training will be able to identify warning signs, relevant resources, and steps they can take to support a person they are concerned about."), side=c("center")),
+#                                           br(),
+#                                           hr(),
+#                                           f7Align(h3("Start the training now!"), side=c("center")),
+#                                           f7Align(div(f7Link("Suicide Prevention - Save A Life Training", href="https://albany.az1.qualtrics.com/jfe/form/SV_9ZwaUUgd9OobdSC")), side=c("center")),
+#                                           hr()
+#                                   )
+#                   )
+#
+#       )
+#     )
+#   })
 
 
 

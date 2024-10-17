@@ -46,6 +46,14 @@ app_ui <- function(request) {
                        uiOutput("welcome"),
                        hairlines = F, strong = T, inset =
                          F, tablet = FALSE))),
+            f7Block(
+              f7Shadow(
+                intensity = 5,
+                hover = TRUE,
+                f7Card(title="Project ACCESS Videos",
+                       uiOutput("videos"),
+                       hairlines = F, strong = T, inset =
+                         F, tablet = FALSE))),
 
             f7Block(
               f7Shadow(
