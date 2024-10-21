@@ -925,9 +925,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_CampusDrugPrevINDEX', selector = selection, data = AODdata(), rownametitle = c('Drug Index (CampusDrugPrevention.gov)'), phone = F, website = T)
           mod_Accordion_server('AOD_CHAMP', selector=selection, data=AODdata(), title = c('CHAMP Program (OASAS)'), Visible = F)
           mod_info_server('AOD_CHAMP', selector = selection, data = AODdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
-          mod_Accordion_ui('AOD_CHAMP')
-
-
+          mod_Accordion_server('AOD_St. Peters Addiction Recovery', selector=selection, data=AODdata(), title = c('St. Peters Addiction Recovery'), Visible = F)
+          mod_info_server('AOD_St. Peters Addiction Recovery', selector = selection, data = AODdata(), rownametitle = c('St. Peters Addiction Recovery'), phone = T, website = T)
 
 
 
@@ -963,7 +962,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('AOD_NYSQuitline', selector = selection, data = AODdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
           mod_Accordion_server('AOD_CHAMP', selector=selection, data=AODdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
           mod_info_server('AOD_CHAMP', selector = selection, data = AODdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
-
+          mod_Accordion_server('AOD_St. Peters Addiction Recovery', selector=selection, data=AODdata(), title = c('St. Peters Addiction Recovery'), Visible = T)
+          mod_info_server('AOD_St. Peters Addiction Recovery', selector = selection, data = AODdata(), rownametitle = c('St. Peters Addiction Recovery'), phone = T, website = T)
 
         }
       })
