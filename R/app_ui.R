@@ -321,6 +321,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('ACA_Excel'),
                                                  mod_Accordion_ui('ACA_CSTEP'),
                                                  mod_Accordion_ui('ACA_SummerResearch'),
+                                                 mod_Accordion_ui('Aca_CURCE'),
                                                  mod_Accordion_ui('Aca_International Student and Scholar Services')
                                      )),
 

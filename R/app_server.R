@@ -1039,6 +1039,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('ACA_CareerServices', selector = selection, data = Acadata(), rownametitle = c('UAlbany Career Services'), phone = T, website = T)
       mod_Accordion_server('Aca_International Student and Scholar Services', selector=selection, data=Acadata(), title = c('International Student and Scholar Services'), Visible = T)
       mod_info_server('Aca_International Student and Scholar Services', selector = selection, data = Acadata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
+      mod_Accordion_server('Aca_CURCE', selector=selection, data=Acadata(), title = c('Center for Undergraduate Research and Creative Engagement (CURCE)'), Visible = T)
+      mod_info_server('Aca_CURCE', selector = selection, data = Acadata(), rownametitle = c('Center for Undergraduate Research and Creative Engagement (CURCE)'), phone = F, website = T)
 
 
     }
