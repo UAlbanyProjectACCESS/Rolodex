@@ -158,6 +158,7 @@ app_ui <- function(request) {
                     conditionalPanel("input.PMHselector == 'Mental Health (MH)'",
                                      f7Accordion(h4("Mental Health Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('Mhcaps'),
+                                                 mod_Accordion_ui('MH_PSC'),
                                                  mod_Accordion_ui('Mhmiddleearth'),
                                                  mod_Accordion_ui('MH_SuicideLifeline'),
                                                  mod_Accordion_ui('Mhnyspa'),

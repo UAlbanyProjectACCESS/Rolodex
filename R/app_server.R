@@ -538,8 +538,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
           mod_Accordion_server('MH_CHAMP', selector=selection, data=MHdata(), title = c('CHAMP Program (OASAS)'), Visible = F)
           mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
-          mod_Accordion_ui('MH_CHAMP')
-
+          mod_Accordion_server('MH_PSC', selector=selection, data=MHdata(), title = c('Psychological Services Center (PSC)'), Visible = F)
+          mod_info_server('MH_PSC', selector = selection, data = MHdata(), rownametitle = c('Psychological Services Center (PSC)'), phone = T, website = T)
 
 
         } else {
@@ -561,7 +561,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MH_SuicideLifeline', selector = selection, data = MHdata(), rownametitle = c('(988) National Suicide & Crisis Lifeline'), phone = T, website = T)
           mod_Accordion_server('MH_CHAMP', selector=selection, data=MHdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
           mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
-
+          mod_Accordion_server('MH_PSC', selector=selection, data=MHdata(), title = c('Psychological Services Center (PSC)'), Visible = T)
+          mod_info_server('MH_PSC', selector = selection, data = MHdata(), rownametitle = c('Psychological Services Center (PSC)'), phone = T, website = T)
         }
       })
 }
