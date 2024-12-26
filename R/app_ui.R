@@ -533,7 +533,7 @@ golem_add_external_resources <- function() {
 
     # Fix Install button to Upper right of screen
     tags$style("
-        #install-button {
+        #toast-content {
             position: fixed;
             top: 20px;
             right: 20px;
