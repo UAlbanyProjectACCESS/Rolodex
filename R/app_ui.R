@@ -529,9 +529,20 @@ golem_add_external_resources <- function() {
           "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,"script","dataLayer","GTM-M39QN8M");</script>'),
 
-    HTML('<link rel="stylesheet" type="text/css" href="https://ewokozwok.github.io/Rolodex/www/framework7.bundle.min.css">')
+    HTML('<link rel="stylesheet" type="text/css" href="https://ewokozwok.github.io/Rolodex/www/framework7.bundle.min.css">'),
 
-
+    # Fix Install button to Upper right of screen
+    tags$style("
+        #install-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            padding: 8px 16px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    "),
     # includeCSS("www/framework7.bundle.min.css")
     # bundle_resources(
     #   path = app_sys('app/www'),
