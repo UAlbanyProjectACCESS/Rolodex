@@ -533,11 +533,24 @@ golem_add_external_resources <- function() {
 
     # Fix Install button to Upper right of screen
     tags$style("
-    button#install-button {
-            position: fixed !important;
-            top: 20px !important;
-            right: 20px !important;
-            z-index: 9999 !important;
+    .custom-toast {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    width: auto !important; /* Ensure it doesn't span unnecessarily */
+    height: auto !important; /* Keep it concise */
+    box-shadow: none; /* Optional: Remove toast shadow */
+    background: transparent !important; /* Optional: Remove toast background */
+    }
+
+    .custom-toast .toast-button {
+        background-color: green; /* Retain the button color */
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
     }
     "),
     # includeCSS("www/framework7.bundle.min.css")
