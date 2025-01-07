@@ -1000,9 +1000,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('GAMB_TxtLocator', selector = selection, data = GAMBdata(), rownametitle = c('OASAS Problem Gambling Treatment Locator'), phone = F, website = T)
       mod_Accordion_server('GAMB_Knowtheodds', selector=selection, data=GAMBdata(), title = c('Know the Odds'), Visible = T)
       mod_info_server('GAMB_Knowtheodds', selector = selection, data = GAMBdata(), rownametitle = c('Know the Odds'), phone = F, website = T)
-
-
-
+      mod_Accordion_server('GAMB_GamFin', selector=selection, data=GAMBdata(), title = c('GamFin'), Visible = T)
+      mod_info_server('GAMB_GamFin', selector = selection, data = GAMBdata(), rownametitle = c('GamFin'), phone = F, website = T)
 
     }
 
