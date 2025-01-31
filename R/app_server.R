@@ -1090,6 +1090,11 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('FHF_WERC', selector = selection, data = FHFdata(), rownametitle = c('Women’s Employment & Resource Center (WERC)'), phone = T, website = T)
 
 
+      mod_Accordion_server('FHF_SNAP', selector=selection, data=FHFdata(), title = c('SNAP (Food Stamps)'), Visible = T)
+      mod_info_server('FHF_SNAP', selector = selection, data = FHFdata(), rownametitle = c('SNAP (Food Stamps)'), phone = F, website = T)
+
+
+
     }
 
 
