@@ -1043,6 +1043,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('Aca_CURCE', selector = selection, data = Acadata(), rownametitle = c('Center for Undergraduate Research and Creative Engagement (CURCE)'), phone = F, website = T)
       mod_Accordion_server('Aca_ICA', selector=selection, data=Acadata(), title = c('International Crossroads Albany (ICA)'), Visible = T)
       mod_info_server('Aca_ICA', selector = selection, data = Acadata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
+      mod_Accordion_server('Aca_BrainFuse', selector=selection, data=Acadata(), title = c('BrainFuse'), Visible = T)
+      mod_info_server('Aca_BrainFuse', selector = selection, data = Acadata(), rownametitle = c('BrainFuse'), phone = F, website = T)
 
 
     }
