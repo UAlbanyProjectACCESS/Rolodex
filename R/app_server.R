@@ -169,7 +169,18 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
                                           br(),
                                           hr()
                                   )
-                  )
+                  ),
+
+                  f7AccordionItem(title = "Mental Health 101 (Grad Students)", open=F,
+                                  f7Block(br(),
+                                          f7Align(h3("Check out our new Mental Health 101 Workshop, specifically for graduate students."), side=c("center")),
+                                          hr(),
+                                          br(),
+                                          HTML('<center><iframe width="auto" height="auto" src="https://www.youtube.com/embed/iUj-M1mcNUM?si=ULOZZiBMhiX-1xCS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>'),
+                                          br(),
+                                          hr()
+                                  )
+                  ),
       )
     )
   })
