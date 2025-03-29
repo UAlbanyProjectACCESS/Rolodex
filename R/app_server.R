@@ -1081,7 +1081,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
     if(input$PMHselector == "International Student Resources"){
       selection<-input$PMHselector
-      INTLdata<-reactive({
+      INTNLdata<-reactive({
         data[data$Type == 'INTNL',]
       }) %>% bindCache(data[data$Type == 'INTNL',])
       observeEvent(input$OffCampus,{
@@ -1095,8 +1095,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           # BOTH ON- AND OFF-CAMPUS RESOURCES HERE
           mod_Accordion_server('INTNL_ISSS', selector=selection, data=INTNLdata(), title = c('International Student and Scholar Services'), Visible = T)
           mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
-          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-          mod_info_server('INTNL_RISSE', selector = selection, data = INTLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+          mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
 
 
 
