@@ -344,6 +344,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
                     conditionalPanel("input.PMHselector == 'International Student Resources'",
                                      f7Accordion(h4("International Student Resources"), multiCollapse = T,
+                                                 mod_Accordion_ui('INTNL_ISSS'),
                                                  mod_Accordion_ui('INTNL_RISSE')
                                      )),
 

@@ -1081,18 +1081,24 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
 
     if(input$PMHselector == "International Student Resources"){
       selection<-input$PMHselector
-      INTLData<-reactive({
+      INTLdata<-reactive({
         data[data$Type == 'INTNL',]
       }) %>% bindCache(data[data$Type == 'INTNL',])
       observeEvent(input$OffCampus,{
 
         if(input$OffCampus == F) {
           # ONLY ON CAMPUS RESOURCES HERE
+          mod_Accordion_server('INTNL_ISSS', selector=selection, data=INTNLdata(), title = c('International Student and Scholar Services'), Visible = T)
+          mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
 
         } else {
           # BOTH ON- AND OFF-CAMPUS RESOURCES HERE
-          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTLData(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-          mod_info_server('INTNL_RISSE', selector = selection, data = INTLData(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_ISSS', selector=selection, data=INTNLdata(), title = c('International Student and Scholar Services'), Visible = T)
+          mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
+          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+          mod_info_server('INTNL_RISSE', selector = selection, data = INTLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
+
 
 
         }
