@@ -513,6 +513,11 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = T)
         mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
 
+        mod_Accordion_server('PMH_RISSE', selector=selection, data=PMHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+        mod_info_server('PMH_RISSE', selector = selection, data = PMHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
+
+
 
       }
     })
@@ -574,6 +579,11 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
           mod_Accordion_server('MH_PSC', selector=selection, data=MHdata(), title = c('Psychological Services Center (PSC)'), Visible = T)
           mod_info_server('MH_PSC', selector = selection, data = MHdata(), rownametitle = c('Psychological Services Center (PSC)'), phone = T, website = T)
+          mod_Accordion_server('MH_RISSE', selector=selection, data=MHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+          mod_info_server('MH_RISSE', selector = selection, data = MHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
+
+
         }
       })
 }
@@ -834,7 +844,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('SV_24hrSexualAssaultHotline', selector = selection, data = SVdata(), rownametitle = c('24-Hour Sexual Assault Hotline'), phone = T, website = T)
           mod_Accordion_server('SV_RAINN', selector=selection, data=SVdata(), title = c('RAINN Sexual Violence'), Visible = F)
           mod_info_server('SV_RAINN', selector = selection, data = SVdata(), rownametitle = c('RAINN Sexual Violence'), phone = T, website = T)
-          mod_Accordion_server('SV_Svcenter', selector=selection, data=SVdata(), title = c('Sexual Violence Center'), Visible = F)
+          mod_Accordion_server('SV_Svcenter', selector=selection, data=SVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = F)
           mod_info_server('SV_Svcenter', selector = selection, data = SVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
 
 
@@ -849,8 +859,12 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('SV_24hrSexualAssaultHotline', selector = selection, data = SVdata(), rownametitle = c('24-Hour Sexual Assault Hotline'), phone = T, website = T)
           mod_Accordion_server('SV_RAINN', selector=selection, data=SVdata(), title = c('RAINN Sexual Violence'), Visible = T)
           mod_info_server('SV_RAINN', selector = selection, data = SVdata(), rownametitle = c('RAINN Sexual Violence'), phone = T, website = T)
-          mod_Accordion_server('SV_Svcenter', selector=selection, data=SVdata(), title = c('Sexual Violence Center'), Visible = T)
+          mod_Accordion_server('SV_Svcenter', selector=selection, data=SVdata(), title = c('Crime Victim and Sexual Violence Center'), Visible = T)
           mod_info_server('SV_Svcenter', selector = selection, data = SVdata(), rownametitle = c('Crime Victim and Sexual Violence Center'), phone = T, website = T)
+          mod_Accordion_server('SV_TittleIX', selector=selection, data=SVdata(), title = c('Title IX'), Visible = T)
+          mod_info_server('SV_TittleIX', selector = selection, data = SVdata(), rownametitle = c('Title IX'), phone = T, website = T)
+          mod_Accordion_server('SV_SAFEKits', selector=selection, data=SVdata(), title = c('SAFE Kits'), Visible = T)
+          mod_info_server('SV_SAFEKits', selector = selection, data = SVdata(), rownametitle = c('SAFE Kits'), phone = F, website = T)
 
 
         }
@@ -1056,10 +1070,34 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('Aca_ICA', selector = selection, data = Acadata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
       mod_Accordion_server('Aca_BrainFuse', selector=selection, data=Acadata(), title = c('BrainFuse'), Visible = T)
       mod_info_server('Aca_BrainFuse', selector = selection, data = Acadata(), rownametitle = c('BrainFuse'), phone = F, website = T)
+      mod_Accordion_server('Aca_PIE', selector=selection, data=Acadata(), title = c('Pathways Into Education Center (PIE Center)'), Visible = T)
+      mod_info_server('Aca_PIE', selector = selection, data = Acadata(), rownametitle = c('Pathways Into Education Center (PIE Center)'), phone = T, website = T)
 
 
     }
 
+    # International Student Resources --------------------------------------------
+
+
+    if(input$PMHselector == "International Student Resources"){
+      selection<-input$PMHselector
+      INTLData<-reactive({
+        data[data$Type == 'INTNL',]
+      }) %>% bindCache(data[data$Type == 'INTNL',])
+      observeEvent(input$OffCampus,{
+
+        if(input$OffCampus == F) {
+          # ONLY ON CAMPUS RESOURCES HERE
+
+        } else {
+          # BOTH ON- AND OFF-CAMPUS RESOURCES HERE
+          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTLData(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+          mod_info_server('INTNL_RISSE', selector = selection, data = INTLData(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
+
+        }
+      })
+    }
 
 
     # Food Housing Financial Accordion ----------------------------------------
@@ -1107,6 +1145,10 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('FHF_SNAP', selector = selection, data = FHFdata(), rownametitle = c('SNAP (Food Stamps)'), phone = F, website = T)
 
 
+      mod_Accordion_server('FHF_RISSE', selector=selection, data=FHFdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+      mod_info_server('FHF_RISSE', selector = selection, data = FHFdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
+
 
     }
 
@@ -1140,6 +1182,9 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LEGAL_SLS', selector = selection, data = Legaldata(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LEGAL_LegalAID', selector=selection, data=Legaldata(), title = c('Legal Aid Society NE New York'), Visible = T)
           mod_info_server('LEGAL_LegalAID', selector = selection, data = Legaldata(), rownametitle = c('Legal Aid Society Northeastern New York'), phone = T, website = T)
+          mod_Accordion_server('Legal_RISSE', selector=selection, data=Legaldata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
+          mod_info_server('Legal_RISSE', selector = selection, data = Legaldata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+
 
 
         }
@@ -1178,6 +1223,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('Hotline_NYSQuitline', selector = selection, data = HLdata(), rownametitle = c('NY Quits - Smokers Quit Line'), phone = T, website = T)
       mod_Accordion_server('HL_CHAMP', selector=selection, data=HLdata(), title = c('CHAMP Program (OASAS)'), Visible = T)
       mod_info_server('HL_CHAMP', selector = selection, data = HLdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
+      mod_Accordion_server('HL_CARELine', selector=selection, data=HLdata(), title = c('Capital CARELine'), Visible = T)
+      mod_info_server('HL_CARELine', selector = selection, data = HLdata(), rownametitle = c('Capital CARELine'), phone = T, website = T)
 
 
     }

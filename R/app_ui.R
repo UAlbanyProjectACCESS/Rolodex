@@ -102,6 +102,7 @@ app_ui <- function(request) {
                                                                                                "Alcohol and Other Drugs",
                                                                                                "Problem Gambling",
                                                                                                "Academic Resources",
+                                                                                               "International Student Resources",
                                                                                                "Food, Housing, & Financial",
                                                                                                "Legal Resources",
                                                                                                "Hotlines"),
@@ -148,7 +149,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('FHF_BlackGirlsRun'),
                                                  mod_Accordion_ui('FHF_CapCityRunners'),
                                                  mod_Accordion_ui('FHF_PaceHappinessRunClub'),
-                                                 mod_Accordion_ui('FHF_AlbRunExchange')
+                                                 mod_Accordion_ui('FHF_AlbRunExchange'),
+                                                 mod_Accordion_ui('PMH_RISSE')
+
                                      )),
 
 
@@ -165,7 +168,9 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('MH_CHAMP'),
                                                  mod_Accordion_ui('Mhpsychtoday'),
                                                  mod_Accordion_ui('MHprideCenter'),
-                                                 mod_Accordion_ui('MHsuicideFound')
+                                                 mod_Accordion_ui('MHsuicideFound'),
+                                                 mod_Accordion_ui('MH_RISSE')
+
                                      )),
 
 
@@ -253,7 +258,10 @@ app_ui <- function(request) {
                                                  mod_Accordion_ui('SV_SVsupportAdvocacy'),
                                                  mod_Accordion_ui('SV_24hrSexualAssaultHotline'),
                                                  mod_Accordion_ui('SV_RAINN'),
-                                                 mod_Accordion_ui('SV_Svcenter')
+                                                 mod_Accordion_ui('SV_Svcenter'),
+                                                 mod_Accordion_ui('SV_TittleIX'),
+                                                 mod_Accordion_ui('SV_SAFEKits')
+
                                      )),
 
 
@@ -309,6 +317,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('GAMB_Knowtheodds')
                                      )),
 
+
 # Academic Resources ------------------------------------------------------
 
 
@@ -317,6 +326,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('ACA_DOS'),
                                                  mod_Accordion_ui('ACA_lib'),
                                                  mod_Accordion_ui('ACA_CareerServices'),
+                                                 mod_Accordion_ui('Aca_PIE'),
                                                  mod_Accordion_ui('ACA_DAISS'),
                                                  mod_Accordion_ui('ACA_Writing'),
                                                  mod_Accordion_ui('ACA_Tutoring'),
@@ -327,6 +337,14 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('Aca_CURCE'),
                                                  mod_Accordion_ui('Aca_International Student and Scholar Services'),
                                                  mod_Accordion_ui('Aca_ICA')
+                                     )),
+
+
+# International Student Resources -----------------------------------------
+
+                    conditionalPanel("input.PMHselector == 'International Student Resources'",
+                                     f7Accordion(h4("International Student Resources"), multiCollapse = T,
+                                                 mod_Accordion_ui('INTNL_RISSE')
                                      )),
 
 # Food, Housing, Financial ------------------------------------------------
@@ -347,7 +365,8 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('FHF_CapCityRescue'),
                                                  mod_Accordion_ui('FHF_VincdepaulFoodPantry'),
                                                  mod_Accordion_ui('FHF_CapRegionCommResource'),
-                                                 mod_Accordion_ui('FHF_WERC')
+                                                 mod_Accordion_ui('FHF_WERC'),
+                                                 mod_Accordion_ui('FHF_RISSE')
 
                                      )),
 
@@ -358,7 +377,9 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                      f7Accordion(h4("Legal Resources"), multiCollapse = T,
                                                  mod_Accordion_ui('Legal_UPD'),
                                                  mod_Accordion_ui('LEGAL_SLS'),
-                                                 mod_Accordion_ui('LEGAL_LegalAID')
+                                                 mod_Accordion_ui('LEGAL_LegalAID'),
+                                                 mod_Accordion_ui('Legal_RISSE')
+
                                      )),
 
 # Hotlines ----------------------------------------------------------------
@@ -371,6 +392,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
                                                  mod_Accordion_ui('Hotline_NYSQuitline'),
                                                  mod_Accordion_ui('HL_NYSsupport'),
                                                  mod_Accordion_ui('HL_NYSsexassaultHL'),
+                                                 mod_Accordion_ui('HL_CARELine'),
                                                  mod_Accordion_ui('HL_CHAMP'),
                                                  mod_Accordion_ui('HL_RAINN'),
                                                  mod_Accordion_ui('HL_SmokersQuit'),
