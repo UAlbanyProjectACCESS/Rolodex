@@ -1094,6 +1094,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
           mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = F)
           mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_ICA', selector=selection, data=INTNLdata(), title = c('International Crossroads Albany (ICA)'), Visible = F)
+          mod_info_server('INTNL_ICA', selector = selection, data = INTNLdata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
 
         } else {
           # BOTH ON- AND OFF-CAMPUS RESOURCES HERE
@@ -1101,6 +1103,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
           mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
           mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_ICA', selector=selection, data=INTNLdata(), title = c('International Crossroads Albany (ICA)'), Visible = T)
+          mod_info_server('INTNL_ICA', selector = selection, data = INTNLdata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
 
 
 
