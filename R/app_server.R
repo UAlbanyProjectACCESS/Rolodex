@@ -474,8 +474,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_info_server('FHF_AlbRunExchange', selector = selection, data = PMHdata(), rownametitle = c('Albany Running Exchange'), phone = F, website = T)
         mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = F)
         mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
-        mod_Accordion_server('PMH_RISSE', selector=selection, data=PMHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = F)
-        mod_info_server('PMH_RISSE', selector = selection, data = PMHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+        mod_Accordion_server('PMH_RISSE', selector=selection, data=PMHdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = F)
+        mod_info_server('PMH_RISSE', selector = selection, data = PMHdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
       } else {
@@ -514,8 +514,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
         mod_Accordion_server('FHF_CapCityRescue', selector=selection, data=PMHdata(), title = c('Capital City Rescue Mission'), Visible = T)
         mod_info_server('FHF_CapCityRescue', selector = selection, data = PMHdata(), rownametitle = c('Capital City Rescue Mission'), phone = T, website = T)
 
-        mod_Accordion_server('PMH_RISSE', selector=selection, data=PMHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-        mod_info_server('PMH_RISSE', selector = selection, data = PMHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+        mod_Accordion_server('PMH_RISSE', selector=selection, data=PMHdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = T)
+        mod_info_server('PMH_RISSE', selector = selection, data = PMHdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
 
@@ -557,8 +557,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
           mod_Accordion_server('MH_PSC', selector=selection, data=MHdata(), title = c('Psychological Services Center (PSC)'), Visible = F)
           mod_info_server('MH_PSC', selector = selection, data = MHdata(), rownametitle = c('Psychological Services Center (PSC)'), phone = T, website = T)
-          mod_Accordion_server('MH_RISSE', selector=selection, data=MHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = F)
-          mod_info_server('MH_RISSE', selector = selection, data = MHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('MH_RISSE', selector=selection, data=MHdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = F)
+          mod_info_server('MH_RISSE', selector = selection, data = MHdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
         } else {
           mod_Accordion_server('Mhcaps', selector=selection, data=MHdata(), title=c("Counseling and Psychological Services Center (CAPS)"),Visible = T)
@@ -581,8 +581,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('MH_CHAMP', selector = selection, data = MHdata(), rownametitle = c('CHAMP Program (OASAS)'), phone = T, website = T)
           mod_Accordion_server('MH_PSC', selector=selection, data=MHdata(), title = c('Psychological Services Center (PSC)'), Visible = T)
           mod_info_server('MH_PSC', selector = selection, data = MHdata(), rownametitle = c('Psychological Services Center (PSC)'), phone = T, website = T)
-          mod_Accordion_server('MH_RISSE', selector=selection, data=MHdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-          mod_info_server('MH_RISSE', selector = selection, data = MHdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('MH_RISSE', selector=selection, data=MHdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = T)
+          mod_info_server('MH_RISSE', selector = selection, data = MHdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
 
@@ -1092,8 +1092,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           # ONLY ON CAMPUS RESOURCES HERE
           mod_Accordion_server('INTNL_ISSS', selector=selection, data=INTNLdata(), title = c('International Student and Scholar Services'), Visible = T)
           mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
-          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = F)
-          mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = F)
+          mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
           mod_Accordion_server('INTNL_ICA', selector=selection, data=INTNLdata(), title = c('International Crossroads Albany (ICA)'), Visible = F)
           mod_info_server('INTNL_ICA', selector = selection, data = INTNLdata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
 
@@ -1101,8 +1101,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           # BOTH ON- AND OFF-CAMPUS RESOURCES HERE
           mod_Accordion_server('INTNL_ISSS', selector=selection, data=INTNLdata(), title = c('International Student and Scholar Services'), Visible = T)
           mod_info_server('INTNL_ISSS', selector = selection, data = INTNLdata(), rownametitle = c('International Student and Scholar Services'), phone = T, website = T)
-          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-          mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('INTNL_RISSE', selector=selection, data=INTNLdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = T)
+          mod_info_server('INTNL_RISSE', selector = selection, data = INTNLdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
           mod_Accordion_server('INTNL_ICA', selector=selection, data=INTNLdata(), title = c('International Crossroads Albany (ICA)'), Visible = T)
           mod_info_server('INTNL_ICA', selector = selection, data = INTNLdata(), rownametitle = c('International Crossroads Albany (ICA)'), phone = F, website = T)
 
@@ -1159,8 +1159,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       mod_info_server('FHF_SNAP', selector = selection, data = FHFdata(), rownametitle = c('SNAP (Food Stamps)'), phone = F, website = T)
 
 
-      mod_Accordion_server('FHF_RISSE', selector=selection, data=FHFdata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-      mod_info_server('FHF_RISSE', selector = selection, data = FHFdata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+      mod_Accordion_server('FHF_RISSE', selector=selection, data=FHFdata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = T)
+      mod_info_server('FHF_RISSE', selector = selection, data = FHFdata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
 
@@ -1187,8 +1187,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LEGAL_SLS', selector = selection, data = Legaldata(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LEGAL_LegalAID', selector=selection, data=Legaldata(), title = c('Legal Aid Society NE New York'), Visible = F)
           mod_info_server('LEGAL_LegalAID', selector = selection, data = Legaldata(), rownametitle = c('Legal Aid Society Northeastern New York'), phone = T, website = T)
-          mod_Accordion_server('Legal_RISSE', selector=selection, data=Legaldata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = F)
-          mod_info_server('Legal_RISSE', selector = selection, data = Legaldata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('Legal_RISSE', selector=selection, data=Legaldata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = F)
+          mod_info_server('Legal_RISSE', selector = selection, data = Legaldata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
         } else {
@@ -1198,8 +1198,8 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
           mod_info_server('LEGAL_SLS', selector = selection, data = Legaldata(), rownametitle = c('Student Legal Services'), phone = T, website = T)
           mod_Accordion_server('LEGAL_LegalAID', selector=selection, data=Legaldata(), title = c('Legal Aid Society NE New York'), Visible = T)
           mod_info_server('LEGAL_LegalAID', selector = selection, data = Legaldata(), rownametitle = c('Legal Aid Society Northeastern New York'), phone = T, website = T)
-          mod_Accordion_server('Legal_RISSE', selector=selection, data=Legaldata(), title = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), Visible = T)
-          mod_info_server('Legal_RISSE', selector = selection, data = Legaldata(), rownametitle = c('RISSE (Refgeee and Imigrant Support Services osf Emmaus)'), phone = T, website = T)
+          mod_Accordion_server('Legal_RISSE', selector=selection, data=Legaldata(), title = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), Visible = T)
+          mod_info_server('Legal_RISSE', selector = selection, data = Legaldata(), rownametitle = c('RISSE (Refgeee and Immigrant Support Services of Emmaus)'), phone = T, website = T)
 
 
 
