@@ -17,6 +17,7 @@ mod_info_ui <- function(id){
       uiOutput(ns1("info4")),
       textOutput(ns1("info5")),
       textOutput(ns1("info9")),
+      textOutput(ns1("info6")),
 
     )
   )
@@ -25,7 +26,7 @@ mod_info_ui <- function(id){
 #' info Server Functions
 #'
 #' @noRd
-mod_info_server <- function(id, selector, data, rownametitle, phone, website){
+mod_info_server <- function(id, selector, data, rownametitle, phone, website, email){
   moduleServer( id, function(input, output, session){
     ns1 <- session$ns
 
@@ -99,6 +100,19 @@ mod_info_server <- function(id, selector, data, rownametitle, phone, website){
 
 
     })
+
+
+    if(email == T){
+      output$info6 <- renderText({
+      text<-c(data[data==rownametitle,6])
+      text<-na.omit(text)
+      text <- as.character(text[1])
+      text
+      })
+
+    } else {
+      output$info6 <- renderUI({})
+    }
   })
 }
 # mod_info_server <- function(id, selector, data, rownametitle, phone, website){
