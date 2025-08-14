@@ -1121,10 +1121,7 @@ Dr. Martin’s research expertise is in substance use and other health-risk beha
       FHFdata<-reactive({
         data[data$Type == 'FHF',]
       }) %>% bindCache(data[data$Type == 'FHF',])
-      ### TEST RESOURCE
-      mod_Accordion_server('FHF_TestResource', selector=selection, data=FHFdata(), title = c('Test Resource'), Visible = T)
-      mod_info_server('FHF_TestResource', selector = selection, data = FHFdata(), rownametitle = c('Test Resource'), phone = T, website = T, email = F)
-      ####
+
       mod_Accordion_server('FAO', selector=selection, data=FHFdata(), title = c('Financial Aid Office'), Visible = T)
       mod_info_server('FAO', selector = selection, data = FHFdata(), rownametitle = c('Financial Aid Office'), phone = T, website = T, email = F)
       mod_Accordion_server('PurplePantry', selector=selection, data=FHFdata(), title = c('Purple Pantry'), Visible = T)
