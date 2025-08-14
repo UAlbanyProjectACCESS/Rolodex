@@ -9,7 +9,7 @@ Description: Project ACCESS Resource Rolodex App is a progressive web
     off-campus resources and referrals to support academic success!
 License: Apache License (>= 2)
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.4.1),

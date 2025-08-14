@@ -354,6 +354,7 @@ conditionalPanel("input.PMHselector == 'Interpartner Violence'",
 
                     conditionalPanel("input.PMHselector == 'Food, Housing, & Financial'",
                                      f7Accordion(h4("Food, Housing, & Financial"), multiCollapse = T,
+                                                 mod_Accordion_ui('FHF_TestResource'),
                                                  mod_Accordion_ui('FAO'),
                                                  mod_Accordion_ui('PurplePantry'),
                                                  mod_Accordion_ui('PurpleThreads'),
